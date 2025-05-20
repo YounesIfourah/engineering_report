@@ -1,0 +1,139 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{Abbreviations}{2}{section*.3}%
+\contentsline {section}{\numberline {0.1}Context and Motivation}{9}{section.0.1}%
+\contentsline {section}{\numberline {0.2}Problematic}{9}{section.0.2}%
+\contentsline {section}{\numberline {0.3}Study Objectives}{9}{section.0.3}%
+\contentsline {section}{\numberline {0.4}Problematic}{9}{section.0.4}%
+\contentsline {section}{\numberline {0.5}Document Organization}{9}{section.0.5}%
+\contentsline {chapter}{\numberline {1}UAV Topologies, standards and Communication Protocols}{10}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{10}{section.1.1}%
+\contentsline {section}{\numberline {1.2}UAV Classification}{10}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Design-Based Classification}{11}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Performance-Based Classification}{12}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Discussion }{14}{subsection.1.2.3}%
+\contentsline {subsubsection}{}{14}{section*.5}%
+\contentsline {section}{\numberline {1.3}UAV Characteristics}{14}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Speed and Flight Time}{15}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Payload}{15}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Range and Altitude}{15}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}UAV Principal Movements}{16}{subsection.1.3.4}%
+\contentsline {section}{\numberline {1.4}Communication protocols for UAVs}{17}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}UranusLink Protocol}{18}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}UAVCAN protocol}{18}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}MAVLink protocol}{19}{subsection.1.4.3}%
+\contentsline {subsubsection}{MAVLink 1.0 header protocol}{19}{section*.6}%
+\contentsline {subsubsection}{MAVLink 2.0 Protocol}{20}{section*.7}%
+\contentsline {subsection}{\numberline {1.4.4} Disscussion}{22}{subsection.1.4.4}%
+\contentsline {section}{\numberline {1.5}UAVs Architectures}{22}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Centralized Communication Architecture}{22}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Decentralized Communication Architecture}{23}{subsection.1.5.2}%
+\contentsline {subsubsection}{Single-Group Swarm Ad Hoc Network}{23}{section*.8}%
+\contentsline {subsubsection}{Multi-Group Swarm Ad hoc Network}{25}{section*.9}%
+\contentsline {subsubsection}{Multi-layer Swarm Ad hoc Network}{25}{section*.10}%
+\contentsline {subsection}{\numberline {1.5.3}Discussion}{26}{subsection.1.5.3}%
+\contentsline {section}{\numberline {1.6}Routing Protocols}{27}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}Routing Technologies}{27}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}The Classification of Routing Protocols}{28}{subsection.1.6.2}%
+\contentsline {subsection}{\numberline {1.6.3}Topology-Based Routing Protocols}{28}{subsection.1.6.3}%
+\contentsline {subsubsection}{Static Routing Protocols}{28}{section*.11}%
+\contentsline {subsubsection}{Proactive Routing Protocols}{29}{section*.12}%
+\contentsline {subsubsection}{Reactive Routing Protocols}{30}{section*.13}%
+\contentsline {subsubsection}{Hybrid Routing Protocols}{30}{section*.14}%
+\contentsline {subsection}{\numberline {1.6.4}Geographic/Position-Based Routing Protocols}{31}{subsection.1.6.4}%
+\contentsline {subsection}{\numberline {1.6.5}Swarm Intelligence-Based Routing Protocols}{31}{subsection.1.6.5}%
+\contentsline {subsection}{\numberline {1.6.6}Discussion}{31}{subsection.1.6.6}%
+\contentsline {section}{\numberline {1.7}Conclusion}{32}{section.1.7}%
+\contentsline {chapter}{\numberline {2}AI-Driven Optimization and Secure Autonomy in UAV Systems}{33}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{33}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Machine learning optimization for UAVs}{33}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}ML for UAV trajectory planning and mission scheduling}{33}{subsection.2.2.1}%
+\contentsline {subsubsection}{Supervised Learning-based UAV Communications}{33}{section*.15}%
+\contentsline {subsubsection}{Unsupervised Learning for Trajectory Planning and Communications}{34}{section*.16}%
+\contentsline {subsubsection}{ Semi-supervised Learning for UAV Trajectory Opti mization}{35}{section*.17}%
+\contentsline {subsubsection}{Reinforcement Learning for Joint Trajectory Plan ning and Mission Scheduling}{35}{section*.18}%
+\contentsline {paragraph}{Deep Q-Network with Trajectory Discretization}{35}{section*.19}%
+\contentsline {paragraph}{Online Trajectory Planning With Deep Deterministic Policy Gradient}{37}{section*.20}%
+\contentsline {paragraph}{Multi-agent DRL for Multi-UAV Cooperation}{37}{section*.21}%
+\contentsline {subsection}{\numberline {2.2.2}Machine Learning for UAV Perception and Feature Extraction}{39}{subsection.2.2.2}%
+\contentsline {subsubsection}{Supervised Learning-based UAV Operations}{39}{section*.22}%
+\contentsline {subsubsection}{Unsupervised Learning-based Approaches}{41}{section*.23}%
+\contentsline {subsection}{\numberline {2.2.3}Machine Learning for Feature Interpretation and Regeneration}{43}{subsection.2.2.3}%
+\contentsline {subsubsection}{Feature interpretation by Linear Regression}{43}{section*.24}%
+\contentsline {subsubsection}{Classification by K-Means Clustering}{44}{section*.25}%
+\contentsline {subsubsection}{Environment Modeling Using Gaussian Mixture Models}{44}{section*.26}%
+\contentsline {section}{\numberline {2.3}Security in UAVs networks}{45}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}taxonomy of security threats based on threat vectors}{45}{subsection.2.3.1}%
+\contentsline {subsubsection}{Threat vectors}{46}{section*.27}%
+\contentsline {paragraph}{C1: Client terminal to GCS.}{46}{section*.28}%
+\contentsline {paragraph}{C2: GCS to Backbone UAV.}{47}{section*.29}%
+\contentsline {paragraph}{C3 and C4: Backbone UAV to other UAVs.}{47}{section*.30}%
+\contentsline {subsubsection}{Security threats on nodes}{48}{section*.31}%
+\contentsline {subsubsection}{Security threats on the IoD}{49}{section*.32}%
+\contentsline {subsubsection}{Confidentiality}{49}{section*.33}%
+\contentsline {subsubsection}{Integrity}{50}{section*.34}%
+\contentsline {subsubsection}{Availability}{50}{section*.35}%
+\contentsline {section}{\numberline {2.4}Security solutions and standards}{50}{section.2.4}%
+\contentsline {subsubsection}{Active interfering (jamming)}{50}{section*.36}%
+\contentsline {subsubsection}{Backdoormalware}{51}{section*.37}%
+\contentsline {subsubsection}{Blackhole}{52}{section*.38}%
+\contentsline {subsubsection}{Collisions}{52}{section*.39}%
+\contentsline {section}{\numberline {2.5}Conclusion}{52}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Traffic monitoring methods}{53}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{53}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Method 1: Airborne Traffic Surveillance System (ATSS)}{54}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Key Features of ATSS}{54}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Limitations of ATSS}{55}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Future Potential}{55}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Conclusion}{55}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Method 2: Video Relay Model Using Public Networks}{56}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Ground Control Station and Network Setup}{56}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Operational Workflow}{56}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Direct IP Address Sharing}{56}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Server-Based Video Relay}{57}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Limitations of the Method}{58}{subsection.3.3.5}%
+\contentsline {subsection}{\numberline {3.3.6}Conclusion}{58}{subsection.3.3.6}%
+\contentsline {section}{\numberline {3.4}Method 3: UAV-Based Traffic Surveillance with 5G Integration}{59}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}System Architecture}{59}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Traffic Monitoring and Violation Detection}{60}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Layer 1: UAV-Based Traffic Monitoring}{60}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Layer 2: Communication Network}{60}{subsection.3.4.4}%
+\contentsline {subsection}{\numberline {3.4.5}Layer 3: Highway Traffic Management}{60}{subsection.3.4.5}%
+\contentsline {subsection}{\numberline {3.4.6}Algorithm for Traffic Monitoring}{60}{subsection.3.4.6}%
+\contentsline {subsection}{\numberline {3.4.7}Limitations of the Proposed System}{61}{subsection.3.4.7}%
+\contentsline {subsection}{\numberline {3.4.8}Conclusion}{61}{subsection.3.4.8}%
+\contentsline {section}{\numberline {3.5}Method 4: Cooperative Traffic Monitoring Using Multiple UAVs}{62}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Key Components of the System}{62}{subsection.3.5.1}%
+\contentsline {subsubsection}{Collecting Information About Vehicles}{62}{section*.40}%
+\contentsline {subsubsection}{Deploying UAVs Over Coverage Areas}{63}{section*.41}%
+\contentsline {subsubsection}{Designing UAV Trajectories}{64}{section*.42}%
+\contentsline {subsection}{\numberline {3.5.2}Simulation and Results}{65}{subsection.3.5.2}%
+\contentsline {subsubsection}{Key Findings}{65}{section*.43}%
+\contentsline {subsection}{\numberline {3.5.3}Limitations of the Method}{66}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Conclusion}{67}{subsection.3.5.4}%
+\contentsline {section}{\numberline {3.6}Method 5: UAV-Assisted Emergency Vehicle Routing}{67}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}System Overview}{67}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}System Composition}{68}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}UAV States and Communication}{68}{subsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.6.4}Operational Constraints}{68}{subsection.3.6.4}%
+\contentsline {subsection}{\numberline {3.6.5}Weight Calculation}{69}{subsection.3.6.5}%
+\contentsline {subsection}{\numberline {3.6.6}Organization and Data Routing}{70}{subsection.3.6.6}%
+\contentsline {subsection}{\numberline {3.6.7}Connected Dominating Set (CDS) Formation}{70}{subsection.3.6.7}%
+\contentsline {subsection}{\numberline {3.6.8}Routing}{71}{subsection.3.6.8}%
+\contentsline {subsubsection}{Packet Format}{72}{section*.44}%
+\contentsline {subsubsection}{Routing Process}{72}{section*.45}%
+\contentsline {subsubsection}{Optimal Path Calculation to the Incident}{73}{section*.46}%
+\contentsline {subsection}{\numberline {3.6.9}Performance Evaluation}{73}{subsection.3.6.9}%
+\contentsline {subsubsection}{Routing Performance}{74}{section*.47}%
+\contentsline {subsubsection}{Energy Consumption Performance}{74}{section*.48}%
+\contentsline {subsubsection}{Application Performance}{74}{section*.49}%
+\contentsline {subsection}{\numberline {3.6.10}Limitations of the Method}{74}{subsection.3.6.10}%
+\contentsline {subsection}{\numberline {3.6.11}Conclusion}{75}{subsection.3.6.11}%
+\contentsline {section}{\numberline {3.7}Method 6: Collaborative Hotspot Selection (CHS) for UAV-Based Traffic Surveillance}{75}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}System Overview}{75}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Probabilistic Model for UAV Trajectory Control}{76}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Hop Number Allocation and Instant Reporting}{77}{subsection.3.7.3}%
+\contentsline {subsection}{\numberline {3.7.4}Performance Evaluation}{77}{subsection.3.7.4}%
+\contentsline {subsubsection}{Key Metrics}{78}{section*.50}%
+\contentsline {subsubsection}{Simulation Results}{78}{section*.51}%
+\contentsline {subsection}{\numberline {3.7.5}Limitations and Challenges}{79}{subsection.3.7.5}%
+\contentsline {section}{\numberline {3.8}Conclusion}{79}{section.3.8}%
