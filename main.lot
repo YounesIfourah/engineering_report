@@ -1,0 +1,23 @@
+\babel@toc {english}{}\relax 
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {1.1}{\ignorespaces UAV Weight Classifications and Implications}}{}{table.1.1}%
+\contentsline {table}{\numberline {1.2}{\ignorespaces UAV Endurance Classifications}}{}{table.1.2}%
+\contentsline {table}{\numberline {1.3}{\ignorespaces UAV Altitude Classifications}}{}{table.1.3}%
+\contentsline {table}{\numberline {1.4}{\ignorespaces UAV Propulsion Systems by Performance Characteristics}}{}{table.1.4}%
+\contentsline {table}{\numberline {1.5}{\ignorespaces UAV Propulsion Systems by Performance Characteristics}}{}{table.1.5}%
+\contentsline {table}{\numberline {1.6}{\ignorespaces UranusLink packet structure. (adapted from \cite {kriz2015uranuslink})}}{}{table.1.6}%
+\contentsline {table}{\numberline {1.7}{\ignorespaces MAVLink 1.0 header structure and byte size. (adapted from \cite {koubaa2017mavlink})}}{}{table.1.7}%
+\contentsline {table}{\numberline {1.8}{\ignorespaces Additional MAVLink 2.0 Header Fields (compared to MAVLink 1.0).}}{}{table.1.8}%
+\contentsline {table}{\numberline {1.9}{\ignorespaces Comparison of UAV Communication Protocols}}{}{table.1.9}%
+\contentsline {table}{\numberline {1.10}{\ignorespaces Summary of UAV Swarm Communication Architectures (\text {$\mathsurround \z@ \mathchar "458$}= supported, x = not supported) \cite {Chen2020}}}{}{table.1.10}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Transmission medium vulnerabilities for C2.}}{}{table.2.1}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Threats on the GCS–Backbone UAV connection (C2).}}{}{table.2.2}%
+\contentsline {table}{\numberline {2.3}{\ignorespaces Threats on Backbone-to-UAV and inter-UAV connections (C3, C4).}}{}{table.2.3}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Input Parameters for Clustering Algorithm (Source: \cite {elloumi2018monitoring})}}{}{table.3.1}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Comparison of Fixed Trajectory, Mobile POI, and Vehicular Mobility Based Methods}}{}{table.3.2}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Monitoring table of UAV \( u_3 \) (adapted from \cite {oubbati2019leveraging})}}{}{table.3.3}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces Weight Calculation Scenario (adapted from \cite {oubbati2019leveraging})}}{}{table.3.4}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces Simulation Parameters}}{}{table.3.5}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces Simulation Parameters}}{}{table.3.6}%
