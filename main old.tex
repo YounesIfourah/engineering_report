@@ -1,0 +1,106 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel} 
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{tocloft} 
+\usepackage{listings}
+\usepackage{float}
+\usepackage{algorithm}
+\usepackage{enumitem}
+\usepackage{algpseudocode}
+\usepackage{comment}
+\usepackage{booktabs}
+\usepackage{array} 
+\usepackage{graphicx}  
+\usepackage{array} 
+\usepackage{pdflscape}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage[ruled,vlined]{algorithm2e} 
+
+
+
+\geometry{
+        left=2.5cm, 
+        right=2.5cm, 
+        top=2.5cm, 
+        bottom=2.5cm
+    }
+
+        
+\renewcommand{\contentsname}{Table of Contents}
+\renewcommand{\listfigurename}{List of Figures}
+\renewcommand{\listtablename}{List of Tables}
+\renewcommand{\bibname}{References}
+
+
+
+\title{\textbf{State of the Art: Communication Between Drones and Ground Sensors for Traffic Surveillance}}
+\author{Younes}
+\date{\today}
+
+\begin{document}
+
+% \include{titlepage}
+
+\maketitle
+\newpage
+
+
+% Abstract
+\chapter*{Abstract}
+%\addcontentsline{toc}{section}{Abstract}
+%Traffic surveillance is a major challenge for road safety and mobility efficiency. Traditional speed control systems have limitations due to their inefficiency in addressing driver behavior. This study proposes an innovative approach based on communication between drones and ground sensors to optimize traffic violation detection and prevention.
+
+\newpage
+
+    \include{extra_begining}
+
+\newpage
+
+    % Table of Contents
+    \tableofcontents
+
+\newpage
+
+    % List of Figures
+    \listoffigures
+
+\newpage
+
+    % List of Tables
+    \listoftables
+
+\newpage
+
+    \include{introduction}
+
+\newpage
+
+    % chapter 1
+    \include{chapter1}
+
+\newpage
+
+    % chapter 2
+    \include{chapter2}
+
+\newpage
+
+    % chapter 3
+    \include{chapter3}
+
+\newpage
+
+    \include{Syntheses}
+
+\bibliographystyle{unsrt}
+\bibliography{biblio}     
+
+\end{document}
