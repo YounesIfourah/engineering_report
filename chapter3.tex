@@ -346,7 +346,7 @@ The key challenge is determining the number of UAVs required to effectively cove
     \item Movement directions of targets.
 \end{itemize}
 
-An off-line algorithm (Algorithm 1) is proposed for this clustering, allowing system operators to estimate the UAV count. The algorithm inputs are shown in Table \ref{tab:clustering_inputs}. Three criteria are used for clustering:
+An off-line algorithm (Algorithm 1) is proposed for this clustering, allowing system operators to estimate the UAV count. The algorithm inputs are shown in Table \ref{tab:Parameters for Clustering Algorithm}. Three criteria are used for clustering:
 \begin{itemize}
     \item Distance between the central target and potential group members (mandatory).
     \item Speed difference between targets (optional).
@@ -375,6 +375,7 @@ An off-line algorithm (Algorithm 1) is proposed for this clustering, allowing sy
     Vc & Central target speed \\ \hline
     \end{tabular}
     \caption{Input Parameters for Clustering Algorithm (Source: \cite{elloumi2018monitoring})}
+    \label{tab:Parameters for Clustering Algorithm}
 \end{table}
 
 
@@ -884,7 +885,7 @@ The UAV calculates the probability of detecting overspeeding incidents at each R
     where \( d_{r,x} \) is the distance between RNs \( r \) and \( x \), and \( v \) is the UAV’s speed.
 \end{enumerate}
 
-The UAV uses these probabilities to determine its next position, prioritizing RNs with the highest likelihood of overspeeding incidents. Figure~\ref{fig:uav_movement} illustrates the UAV’s movement based on probabilistic calculations.
+The UAV uses these probabilities to determine its next position, prioritizing RNs with the highest likelihood of overspeeding incidents. Figure~\ref{fig:hop_numbers} illustrates the UAV’s movement based on probabilistic calculations.
 
 \begin{figure}[h]
     \centering

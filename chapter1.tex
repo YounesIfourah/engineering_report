@@ -61,7 +61,7 @@ Design architecture plays a pivotal role in UAV functionality. UAVs can be struc
     \end{figure}
     
 \begin{itemize}
-    \item \textbf{Quad-rotor (4 Rotors):} Most common and cost-effective, offering stability for light-to-medium payloads. Limited redundancy—single motor failure can destabilize flight. \cite{idk}
+    \item \textbf{Quad-rotor (4 Rotors):} Most common and cost-effective, offering stability for light-to-medium payloads. Limited redundancy single motor failure can destabilize flight. \cite{idk}
     
     \item \textbf{Hexa-rotor (6 Rotors):} Improved redundancy and payload capacity over quadcopters. Can tolerate one rotor failure but consumes more power. \cite{idk}
     
@@ -103,7 +103,7 @@ Complementing the structural design perspective, UAVs can also be evaluated base
 \begin{enumerate}
     \item \textbf{Weight:} Influences lift requirements, battery life, and legal classifications.
 
-    UAVs span a wide spectrum of weights—from micro UAVs under 5 kg to large strategic drones like the \textit{Global Hawk}, which exceeds 11 tonnes. Based on their take-off weight, UAVs can be classified into five categories:
+    UAVs span a wide spectrum of weights from micro UAVs under 5 kg to large strategic drones like the \textit{Global Hawk}, which exceeds 11 tonnes. Based on their take-off weight, UAVs can be classified into five categories:
 
     % \begin{itemize}
     %     \item \textbf{Micro UAVs (MAV):} Under 5 kg. Examples include the Dragon Eye, FPASS, Pointer, and SilentEyes.
@@ -152,7 +152,7 @@ Complementing the structural design perspective, UAVs can also be evaluated base
     
     % \begin{itemize}
     %     \item \textbf{Short Endurance:} Less than 5 hours. Typically used for brief tactical missions like "over-the-hill" reconnaissance.
-    %     \item \textbf{Medium Endurance:} Between 5 and 24 hours. Includes UAVs like the Shadow 600 and Predator—this is the most common endurance class.
+    %     \item \textbf{Medium Endurance:} Between 5 and 24 hours. Includes UAVs like the Shadow 600 and Predator this is the most common endurance class.
     %     \item \textbf{Long Endurance:} 24 hours or more. These UAVs are capable of extended surveillance with ranges starting at 1500 km and reaching up to 22000 km, as demonstrated by the Global Hawk.
     % \end{itemize}
 
@@ -337,7 +337,7 @@ UAVs rely on specific movements to navigate and perform tasks effectively. These
 
 \vspace{0.5cm}
 
-The characteristics of UAVs-such as speed, flight time, payload capacity, range, altitude, and principal movements—are fundamental to their overall design and performance. Each characteristic impacts the UAV's ability to carry out specific tasks, whether it's surveillance, communication, or commercial applications. Understanding and optimizing these factors is essential for advancing UAV technology and ensuring the successful deployment of UAVs across various industries. As research continues to improve UAV designs, advancements in battery life, payload efficiency, and flight stability are expected to enhance the capabilities of UAVs, enabling them to perform more complex and longer-duration missions.
+The characteristics of UAVs-such as speed, flight time, payload capacity, range, altitude, and principal movements are fundamental to their overall design and performance. Each characteristic impacts the UAV's ability to carry out specific tasks, whether it's surveillance, communication, or commercial applications. Understanding and optimizing these factors is essential for advancing UAV technology and ensuring the successful deployment of UAVs across various industries. As research continues to improve UAV designs, advancements in battery life, payload efficiency, and flight stability are expected to enhance the capabilities of UAVs, enabling them to perform more complex and longer-duration missions.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -378,19 +378,19 @@ Various communication protocols have been specifically developed for Unmanned Ae
 \label{tab:uranuslink_pivoted}
 \end{table}
 
-The UranusLink protocol is tailored for radio communications, where data loss and corruption are frequent.  Each packet begins with a \textbf{preamble (PRE)} byte \texttt{0xFD}, which seldom occurs in payloads, ensuring reliable packet boundary detection.  Following this is an even-valued \textbf{sequence number (SQN)}, used to detect lost or out‑of‑order packets—any packet with an SQN lower than the last accepted is discarded—and a \textbf{checksum (CS)} to validate integrity.  The sizes of PRE and CS balance robustness against overhead, taking link conditions and capacity into account.
+The UranusLink protocol is tailored for radio communications, where data loss and corruption are frequent.  Each packet begins with a \textbf{preamble (PRE)} byte \texttt{0xFD}, which seldom occurs in payloads, ensuring reliable packet boundary detection.  Following this is an even-valued \textbf{sequence number (SQN)}, used to detect lost or out of order packets any packet with an SQN lower than the last accepted is discarded and a \textbf{checksum (CS)} to validate integrity.  The sizes of PRE and CS balance robustness against overhead, taking link conditions and capacity into account.
 
 \vspace{0.5cm}
 
-The \textbf{MID} field specifies how to interpret the payload.  Currently there are eight UAV‑to‑ground and sixteen ground‑to‑UAV message types; the two critical ones establish and maintain the connection in each direction.  
+The \textbf{MID} field specifies how to interpret the payload.  Currently there are eight UAV to ground and sixteen ground‑to‑UAV message types; the two critical ones establish and maintain the connection in each direction.  
 
 \vspace{0.5cm}
 
-Two UAV modes are supported: \textbf{flight mode}, in which the rotors spin, and \textbf{configuration mode}, used on the ground.  A “robot mode switch” message triggers transitions, and only these mode‑switch packets are acknowledged—other messages are sent unacknowledged to minimize overhead.  The ground station tracks SQNs of mode‑switch requests so it can determine the UAV’s current mode even if acknowledgments are lost.
+Two UAV modes are supported: \textbf{flight mode}, in which the rotors spin, and \textbf{configuration mode}, used on the ground.  A “robot mode switch” message triggers transitions, and only these mode‑switch packets are acknowledged other messages are sent unacknowledged to minimize overhead.  The ground station tracks SQNs of mode switch requests so it can determine the UAV’s current mode even if acknowledgments are lost.
 
 \vspace{0.5cm}
 
-Compared to MAVLink—which can incur up to 33 \% extra overhead and offers no built‑in security—UranusLink achieves much lower overhead while providing essential reliability and mode‑switch acknowledgment.
+Compared to MAVLink which can incur up to 33 \% extra overhead and offers no built‑in security UranusLink achieves much lower overhead while providing essential reliability and mode‑switch acknowledgment.
 
 
 
@@ -400,7 +400,7 @@ UAVCAN is an open‑source, masterless publish–subscribe protocol for secure c
 
 \vspace{0.5cm}
 
-Based on the CAN bus, originally created for automotive multiplex wiring, UAVCAN enables host‑free communication between devices and microcontrollers \cite{kriz2015uranuslink}.  Each node is assigned a unique ID in the range 1–127 (ID 1 typically denotes the autopilot; 126–127 are for debugging).  To avoid mismatches, any MAVLink component communicating over UAVCAN must use the same Component ID (COMPID) as its UAVCAN Node ID—commonly both set to 1—so that every MAVLink message’s COMPID field matches its UAVCAN node ID \cite{kriz2015uranuslink}.
+Based on the CAN bus, originally created for automotive multiplex wiring, UAVCAN enables host‑free communication between devices and microcontrollers \cite{kriz2015uranuslink}.  Each node is assigned a unique ID in the range 1–127 (ID 1 typically denotes the autopilot; 126–127 are for debugging).  To avoid mismatches, any MAVLink component communicating over UAVCAN must use the same Component ID (COMPID) as its UAVCAN Node ID commonly both set to 1 so that every MAVLink message’s COMPID field matches its UAVCAN node ID \cite{kriz2015uranuslink}.
 
 
 
@@ -476,7 +476,7 @@ In summary, the MAVLink 1.0 protocol employs a lightweight and efficient packet 
 
 \subsubsection{MAVLink 2.0 Protocol}
 
-MAVLink 2.0 was introduced in early 2017 \cite{allouch2019mavsec, khan2020emerging}, offering enhancements over MAVLink 1.0 while maintaining backward compatibility. This section presents the MAVLink 2.0 header structure and compares it with MAVLink 1.0. The MAVLink 2.0 header is shown in Fig.~\ref{fig:mavlink-v2-packet}, and Table~\ref{mavlink2_additional_fields} explains the additional fields in the MAVLink 2.0 header compared to MAVLink 1.0.
+MAVLink 2.0 was introduced in early 2017 \cite{allouch2019mavsec, khan2020emerging}, offering enhancements over MAVLink 1.0 while maintaining backward compatibility. This section presents the MAVLink 2.0 header structure and compares it with MAVLink 1.0. The MAVLink 2.0 header is shown in Fig.~\ref{fig:mavlink-v2-packet}, and Table~\ref{tab:mavlink2_additional_fields} explains the additional fields in the MAVLink 2.0 header compared to MAVLink 1.0.
 
 \vspace{0.5cm}
 
@@ -544,7 +544,6 @@ UAV operations depend critically on communication protocols that remain vulnerab
 
 \begin{table}[H]
 \centering
-\label{tab:uav_protocol_comparison}
 \renewcommand{\arraystretch}{1.0} % Reduced from 1.3
 \setlist[itemize]{nosep,leftmargin=*,topsep=0pt,partopsep=0pt} % Compact lists
 \begin{tabular}{|>{\centering\arraybackslash}m{3cm}|
@@ -598,6 +597,7 @@ MAVLink &
 \hline
 \end{tabular}
 \caption{Comparison of UAV Communication Protocols}
+\label{tab:uav_protocol_comparison}
 \end{table}
 
 
@@ -620,7 +620,7 @@ As evidenced in Table~\ref{tab:uav_protocol_comparison}, current UAV protocols p
 
 
 
-The communication architecture is essential for enabling intelligent control and autonomous collaboration in UAV swarms. Initially, centralized architectures—an extension of traditional single-UAV systems were used, with a single ground station managing all UAV communication. However, as swarm size and mission complexity grew, decentralized architectures emerged as more scalable alternatives, reducing dependency on central nodes \cite{Cao2012}. Many studies have since explored different swarm communication models. This section reviews the main architectures, summarizing their characteristics, strengths, and limitations.
+The communication architecture is essential for enabling intelligent control and autonomous collaboration in UAV swarms. Initially, centralized architectures an extension of traditional single-UAV systems were used, with a single ground station managing all UAV communication. However, as swarm size and mission complexity grew, decentralized architectures emerged as more scalable alternatives, reducing dependency on central nodes \cite{Cao2012}. Many studies have since explored different swarm communication models. This section reviews the main architectures, summarizing their characteristics, strengths, and limitations.
 
 
 
@@ -641,7 +641,7 @@ The \textbf{centralized communication architecture}, adapted from single-UAV sys
 \label{fig:centralized communication architecture}
 \end{figure}
 
-Despite its simplicity, this architecture presents key limitations. All inter-UAV communication must pass through the infrastructure, making the \textbf{UAV-to-Infrastructure (U-T-I)} distance typically longer than the \textbf{UAV-to-UAV (U-T-U)} distance, resulting in increased latency. Moreover, the high mobility of UAVs and growing coverage requirements render the system unstable. A major weakness is its \textbf{Single Point of Failure (SPOF)}—if the ground station or satellite fails, the entire network collapses. As a result, centralized architectures are unsuitable for large-scale or high-risk missions.
+Despite its simplicity, this architecture presents key limitations. All inter-UAV communication must pass through the infrastructure, making the \textbf{UAV-to-Infrastructure (U-T-I)} distance typically longer than the \textbf{UAV-to-UAV (U-T-U)} distance, resulting in increased latency. Moreover, the high mobility of UAVs and growing coverage requirements render the system unstable. A major weakness is its \textbf{Single Point of Failure (SPOF)} if the ground station or satellite fails, the entire network collapses. As a result, centralized architectures are unsuitable for large-scale or high-risk missions.
 
 
 
@@ -799,11 +799,11 @@ Routing technologies form the foundation for implementing routing protocols, whi
 \begin{enumerate}
     \item \textbf{Store-carry-forward:} When no relay is available, the node stores and carries the data until it finds one. Suitable for intermittent networks but causes high delays.
 
-    \item \textbf{Greedy forward:} Selects the neighbor closest to the destination as the next hop. Works well in dense UAV deployments but may fail if no closer neighbor exists—requiring backup strategies.
+    \item \textbf{Greedy forward:} Selects the neighbor closest to the destination as the next hop. Works well in dense UAV deployments but may fail if no closer neighbor exists requiring backup strategies.
 
     \item \textbf{Path discovery:} Uses flooding (RREQ) to find routes, improving path availability when location info is lost. However, it consumes significant bandwidth.
 
-    \item \textbf{Single-path:} Sends data through one route, conserving bandwidth but lacking robustness—no backup path if a failure occurs.
+    \item \textbf{Single-path:} Sends data through one route, conserving bandwidth but lacking robustness no backup path if a failure occurs.
 
     \item \textbf{Multi-path:} Maintains several routes to improve reliability. If one path fails, others can take over. However, shared path failures can cause loops.
 

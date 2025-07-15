@@ -11,7 +11,7 @@
 \section{Introduction}
 
 
-Unmanned Aerial Vehicles (UAVs) have become indispensable in fields such as agriculture, surveillance, and disaster response, thanks to their agility and advanced sensing capabilities. A key driver of their success is the integration of Artificial Intelligence (AI) and optimization techniques, which improve trajectory planning, mission efficiency, and real-time decision-making. This chapter examines how machine learning—including supervised, unsupervised, and reinforcement learning—enhances UAV operations, from energy-efficient navigation to dynamic feature extraction. It also addresses critical security risks in UAV networks, such as jamming, spoofing, and malicious attacks, while discussing countermeasures. By reviewing advancements in AI-driven optimization and cybersecurity, this chapter establishes a foundation for understanding the current state of UAV technology and its future directions.
+Unmanned Aerial Vehicles (UAVs) have become indispensable in fields such as agriculture, surveillance, and disaster response, thanks to their agility and advanced sensing capabilities. A key driver of their success is the integration of Artificial Intelligence (AI) and optimization techniques, which improve trajectory planning, mission efficiency, and real-time decision-making. This chapter examines how machine learning including supervised, unsupervised, and reinforcement learning enhances UAV operations, from energy-efficient navigation to dynamic feature extraction. It also addresses critical security risks in UAV networks, such as jamming, spoofing, and malicious attacks, while discussing countermeasures. By reviewing advancements in AI-driven optimization and cybersecurity, this chapter establishes a foundation for understanding the current state of UAV technology and its future directions.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -296,7 +296,7 @@ Although LR is easy to implement and interpret, it assumes a linear relationship
 
 \subsubsection{Classification by K-Means Clustering}
 
-K-means clustering has been effectively applied in path planning for multi-UAV systems, particularly when coordinating multiple tasks within a designated area. Given the geographic distribution of tasks, K-means is used to group them into several clusters. Each cluster can then be assigned to a UAV, and route optimization techniques—such as simulated annealing or genetic algorithms—are employed to determine efficient paths within those clusters.
+K-means clustering has been effectively applied in path planning for multi-UAV systems, particularly when coordinating multiple tasks within a designated area. Given the geographic distribution of tasks, K-means is used to group them into several clusters. Each cluster can then be assigned to a UAV, and route optimization techniques such as simulated annealing or genetic algorithms are employed to determine efficient paths within those clusters.
 
 In addition to task allocation, K-means plays a role in guiding UAV movement for coverage-related objectives. For instance, in scenarios where UAVs are deployed to deliver cellular connectivity, the approach dynamically groups users based on their spatial positions. UAVs are then directed to the centroids of these groups to ensure adequate coverage and maintain service quality. This method has demonstrated convergence toward locally optimal deployments. Similar strategies have also been implemented in aerial surveillance tasks to ensure efficient area monitoring using multiple UAVs.
 
@@ -348,237 +348,253 @@ In conclusion, techniques such as K-means clustering and linear regression are e
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Security in UAVs networks}
 
 
-\subsection{taxonomy of security threats based on threat vectors}
 
-    This section introduces a structured overview of security threats in FANETs, organized according to threat vectors, as depicted in Figure~\ref{fig:FANET_threats}. These vectors include six types of connections and six distinct node categories. A total of 20 threats are analyzed and categorized based on both their impact on security requirements and their relevance to different network architectures.
+
+
+
+
+
+% \section{Security in UAVs networks}
+
+
+% \subsection{taxonomy of security threats based on threat vectors}
+
+%     This section introduces a structured overview of security threats in FANETs, organized according to threat vectors, as depicted in Figure~\ref{fig:FANET_threats}. These vectors include six types of connections and six distinct node categories. A total of 20 threats are analyzed and categorized based on both their impact on security requirements and their relevance to different network architectures.
     
-    Utilizing the STRIDE threat modeling framework, we identify specific vulnerabilities affecting both node and connection layers (see Figure~\ref{fig:FANET_threats}). 
+%     Utilizing the STRIDE threat modeling framework, we identify specific vulnerabilities affecting both node and connection layers (see Figure~\ref{fig:FANET_threats}). 
     
-    Out of the 20 threats, 15 pertain to connection-level vulnerabilities, while the remaining five are associated with node-level issues. To address these threats, 15 mitigation strategies have been proposed. These strategies span six types of networks: 5G mobile networks, FANETs, general Ad-Hoc networks, RW, WLAN, and WSN.
+%     Out of the 20 threats, 15 pertain to connection-level vulnerabilities, while the remaining five are associated with node-level issues. To address these threats, 15 mitigation strategies have been proposed. These strategies span six types of networks: 5G mobile networks, FANETs, general Ad-Hoc networks, RW, WLAN, and WSN.
     
-    
-
-
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=0.7\textwidth]{Figures/Chapter2/Section2/1.png}
-        \caption{Percentage of security threats in FANETs~\cite{tsao2022survey}}
-        \label{fig:FANET_threats}
-    \end{figure}
     
 
-\subsubsection{Threat vectors}
 
-
-
-
-
-
-
-
-The following section analyzes the primary security threats that can affect each communication link within a typical UAV ground and aerial system. These links—ranging from user interfaces to inter-UAV communication—are potential vectors for attacks targeting confidentiality, integrity, availability, or authenticity. For each connection, we identify common threats and describe them succinctly for clarity and reference.
-
-\paragraph{C1: Client terminal to GCS.}
-
-This connection involves the user interface where operators input commands or receive feedback. It is vulnerable to insider misuse, eavesdropping, and message replay.
-
-\begin{itemize}
-    \item \textbf{Eavesdropping:} Interception of sensitive data such as commands or credentials, which compromises confidentiality.
-    \item \textbf{Insider threat:} Authorized users misusing their access to compromise the system's integrity.
-    \item \textbf{Replay attack:} Reuse of captured messages to produce misleading outcomes, affecting authenticity.
-\end{itemize}
-
-\paragraph{C2: GCS to Backbone UAV.}
-
-This link is critical for command and control and is transmitted via wireless media that differ in vulnerability. The security depends heavily on the medium used.
-
-\begin{table}[H]
-\renewcommand{\arraystretch}{1.3}
-\centering
-\caption{Transmission medium vulnerabilities for C2.}
-\begin{tabular}{|>{\centering\arraybackslash}m{3.5cm}|
-                >{\centering\arraybackslash}m{2.5cm}|
-                >{\arraybackslash}m{7.5cm}|}
-\hline
-\textbf{Medium} & \textbf{Security Level} & \textbf{Vulnerabilities} \\
-\hline
-WiFi & Medium & Susceptible to interception if not strongly encrypted; can be mitigated using non-standard frequency bands. \\
-\hline
-RF & Low & Sensitive to interference; careful channel selection and control are needed. \\
-\hline
-Satellite & High & Generally more secure but expensive and less commonly used in civilian operations. \\
-\hline
-\end{tabular}
-\label{tab:c2_mediums}
-\end{table}
-
-\vspace{1em}
-
-The communication from GCS to UAVs is open to several attacks, particularly due to wireless exposure. The table below details key threats targeting this path.
-
-\begin{table}[H]
-\renewcommand{\arraystretch}{1.3}
-\centering
-\caption{Threats on the GCS–Backbone UAV connection (C2).}
-\begin{tabular}{|>{\centering\arraybackslash}m{3.5cm}|
-                >{\centering\arraybackslash}m{2.5cm}|
-                >{\arraybackslash}m{7.5cm}|}
-\hline
-\textbf{Threat} & \textbf{Category} & \textbf{Description} \\
-\hline
-Eavesdropping & Confidentiality & Leakage of mission-critical information or positioning data. \\
-\hline
-Jamming & Availability & Intentional or accidental signal disruption, breaking communication. \\
-\hline
-Man-in-the-middle & Integrity & Interception and manipulation of exchanged messages. \\
-\hline
-Replay attack & Authenticity & Reusing valid packets to disrupt or trick the communication logic. \\
-\hline
-\end{tabular}
-\label{tab:c2_threats}
-\end{table}
-
-\paragraph{C3 and C4: Backbone UAV to other UAVs.}
-
-These connections support swarm behavior and inter-UAV coordination. Their wireless nature makes them highly sensitive to disruptions and impersonation threats.
-
-\begin{table}[H]
-\renewcommand{\arraystretch}{1.3}
-\centering
-\caption{Threats on Backbone-to-UAV and inter-UAV connections (C3, C4).}
-\begin{tabular}{|>{\centering\arraybackslash}m{3.5cm}|
-                >{\centering\arraybackslash}m{2.5cm}|
-                >{\arraybackslash}m{7.5cm}|}
-\hline
-\textbf{Threat} & \textbf{Category} & \textbf{Description} \\
-\hline
-Eavesdropping & Confidentiality & Unauthorized interception of UAV status or swarm coordination commands. \\
-\hline
-Jamming & Availability & Signal blocking that affects the swarm’s ability to coordinate. \\
-\hline
-Man-in-the-middle & Integrity & Rogue UAVs impersonate legitimate ones to alter, delay, or block communication. \\
-\hline
-Replay attack & Authenticity & Repetition of past messages to cause confusion or misalignment in swarm behavior. \\
-\hline
-\end{tabular}
-\label{tab:c3_c4_threats}
-\end{table}
-
-
-
-
-
-
-\subsubsection{Security threats on nodes}
-
-Security threats on nodes, including client terminals, GCS, and UAVs, can disrupt FANET operations. If a node fails to forward messages, another node may take control of the mission.
-
-\textbf{Client terminal.} Client terminals can be attacked to send malicious or fake commands, depending on their hardware and operating systems.
-
-\textbf{GCS and backbone UAV, single point of failure (SPOF).} The reliance on a single GCS and backbone UAV is a vulnerability. Implementing multiple GCSs and UAVs enhances resilience by ensuring automatic operation in case of failure.
-
-\textbf{UAVs.} UAVs face several major threats:
-
-\begin{itemize}
-    \item \textbf{Backdoor.} UAVs can contain backdoors that allow external control, hijacking their operation. ~\ref{fig:Maldrone_Attack} shows a Maldrone attack.
-
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=0.7\textwidth]{Figures/Chapter2/Section2/4.png}
-        \caption{ Maldrone Attack ~\cite{tsao2022survey}}
-        \label{fig:Maldrone_Attack}
-    \end{figure}
+%     \begin{figure}[H]
+%         \centering
+%         \includegraphics[width=0.7\textwidth]{Figures/Chapter2/Section2/1.png}
+%         \caption{Percentage of security threats in FANETs~\cite{tsao2022survey}}
+%         \label{fig:FANET_threats}
+%     \end{figure}
     
-    \item \textbf{Denial of Service (DoS) attack.} Attackers can overload UAVs with fake messages, preventing new missions or disrupting flight paths. ~\ref{fig:DoS_Attack} shows a DoS attack on UAV 1.
 
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=0.7\textwidth]{Figures/Chapter2/Section2/5.png}
-        \caption{  DoS Attack ~\cite{tsao2022survey}}
-        \label{fig: DoS_Attack}
-    \end{figure}
+% \subsubsection{Threat vectors}
+
+
+
+
+
+
+
+
+% The following section analyzes the primary security threats that can affect each communication link within a typical UAV ground and aerial system. These links ranging from user interfaces to inter-UAV communication are potential vectors for attacks targeting confidentiality, integrity, availability, or authenticity. For each connection, we identify common threats and describe them succinctly for clarity and reference.
+
+% \paragraph{C1: Client terminal to GCS.}
+
+% This connection involves the user interface where operators input commands or receive feedback. It is vulnerable to insider misuse, eavesdropping, and message replay.
+
+% \begin{itemize}
+%     \item \textbf{Eavesdropping:} Interception of sensitive data such as commands or credentials, which compromises confidentiality.
+%     \item \textbf{Insider threat:} Authorized users misusing their access to compromise the system's integrity.
+%     \item \textbf{Replay attack:} Reuse of captured messages to produce misleading outcomes, affecting authenticity.
+% \end{itemize}
+
+% \paragraph{C2: GCS to Backbone UAV.}
+
+% This link is critical for command and control and is transmitted via wireless media that differ in vulnerability. The security depends heavily on the medium used.
+
+% \begin{table}[H]
+% \renewcommand{\arraystretch}{1.3}
+% \centering
+% \caption{Transmission medium vulnerabilities for C2.}
+% \begin{tabular}{|>{\centering\arraybackslash}m{3.5cm}|
+%                 >{\centering\arraybackslash}m{2.5cm}|
+%                 >{\arraybackslash}m{7.5cm}|}
+% \hline
+% \textbf{Medium} & \textbf{Security Level} & \textbf{Vulnerabilities} \\
+% \hline
+% WiFi & Medium & Susceptible to interception if not strongly encrypted; can be mitigated using non-standard frequency bands. \\
+% \hline
+% RF & Low & Sensitive to interference; careful channel selection and control are needed. \\
+% \hline
+% Satellite & High & Generally more secure but expensive and less commonly used in civilian operations. \\
+% \hline
+% \end{tabular}
+% \label{tab:c2_mediums}
+% \end{table}
+
+% \vspace{1em}
+
+% The communication from GCS to UAVs is open to several attacks, particularly due to wireless exposure. The table below details key threats targeting this path.
+
+% \begin{table}[H]
+% \renewcommand{\arraystretch}{1.3}
+% \centering
+% \caption{Threats on the GCS–Backbone UAV connection (C2).}
+% \begin{tabular}{|>{\centering\arraybackslash}m{3.5cm}|
+%                 >{\centering\arraybackslash}m{2.5cm}|
+%                 >{\arraybackslash}m{7.5cm}|}
+% \hline
+% \textbf{Threat} & \textbf{Category} & \textbf{Description} \\
+% \hline
+% Eavesdropping & Confidentiality & Leakage of mission-critical information or positioning data. \\
+% \hline
+% Jamming & Availability & Intentional or accidental signal disruption, breaking communication. \\
+% \hline
+% Man-in-the-middle & Integrity & Interception and manipulation of exchanged messages. \\
+% \hline
+% Replay attack & Authenticity & Reusing valid packets to disrupt or trick the communication logic. \\
+% \hline
+% \end{tabular}
+% \label{tab:c2_threats}
+% \end{table}
+
+% \paragraph{C3 and C4: Backbone UAV to other UAVs.}
+
+% These connections support swarm behavior and inter-UAV coordination. Their wireless nature makes them highly sensitive to disruptions and impersonation threats.
+
+% \begin{table}[H]
+% \renewcommand{\arraystretch}{1.3}
+% \centering
+% \caption{Threats on Backbone-to-UAV and inter-UAV connections (C3, C4).}
+% \begin{tabular}{|>{\centering\arraybackslash}m{3.5cm}|
+%                 >{\centering\arraybackslash}m{2.5cm}|
+%                 >{\arraybackslash}m{7.5cm}|}
+% \hline
+% \textbf{Threat} & \textbf{Category} & \textbf{Description} \\
+% \hline
+% Eavesdropping & Confidentiality & Unauthorized interception of UAV status or swarm coordination commands. \\
+% \hline
+% Jamming & Availability & Signal blocking that affects the swarm’s ability to coordinate. \\
+% \hline
+% Man-in-the-middle & Integrity & Rogue UAVs impersonate legitimate ones to alter, delay, or block communication. \\
+% \hline
+% Replay attack & Authenticity & Repetition of past messages to cause confusion or misalignment in swarm behavior. \\
+% \hline
+% \end{tabular}
+% \label{tab:c3_c4_threats}
+% \end{table}
+
+
+
+
+
+
+% \subsubsection{Security threats on nodes}
+
+% Security threats on nodes, including client terminals, GCS, and UAVs, can disrupt FANET operations. If a node fails to forward messages, another node may take control of the mission.
+
+% \textbf{Client terminal.} Client terminals can be attacked to send malicious or fake commands, depending on their hardware and operating systems.
+
+% \textbf{GCS and backbone UAV, single point of failure (SPOF).} The reliance on a single GCS and backbone UAV is a vulnerability. Implementing multiple GCSs and UAVs enhances resilience by ensuring automatic operation in case of failure.
+
+% \textbf{UAVs.} UAVs face several major threats:
+
+% \begin{itemize}
+%     \item \textbf{Backdoor.} UAVs can contain backdoors that allow external control, hijacking their operation. ~\ref{fig:Maldrone_Attack} shows a Maldrone attack.
+
+%     \begin{figure}[H]
+%         \centering
+%         \includegraphics[width=0.7\textwidth]{Figures/Chapter2/Section2/4.png}
+%         \caption{ Maldrone Attack ~\cite{tsao2022survey}}
+%         \label{fig:Maldrone_Attack}
+%     \end{figure}
     
-    \item \textbf{Flooding attack.} Sending large volumes of data to UAVs can deplete their resources, causing malfunctions.
+%     \item \textbf{Denial of Service (DoS) attack.} Attackers can overload UAVs with fake messages, preventing new missions or disrupting flight paths. ~\ref{fig:DoS_Attack} shows a DoS attack on UAV 1.
+
+%     \begin{figure}[H]
+%         \centering
+%         \includegraphics[width=0.7\textwidth]{Figures/Chapter2/Section2/5.png}
+%         \caption{  DoS Attack ~\cite{tsao2022survey}}
+%         \label{fig: DoS_Attack}
+%     \end{figure}
     
-    \item \textbf{Selfishness/selfish node.} UAVs low on energy may reduce performance by failing to forward data to others, degrading network efficiency. ~\ref{fig:IOD_system} shows an example of a selfish node
-
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=0.7\textwidth]{Figures/Chapter2/Section2/6.png}
-        \caption{  Selfish Node ~\cite{tsao2022survey}}
-        \label{fig: Selfish_Node}
-    \end{figure}
+%     \item \textbf{Flooding attack.} Sending large volumes of data to UAVs can deplete their resources, causing malfunctions.
     
-    \item \textbf{Cloud server and storage, data tampering.} Modifying stored data in cloud databases can compromise privacy or disrupt operations.
-\end{itemize}
+%     \item \textbf{Selfishness/selfish node.} UAVs low on energy may reduce performance by failing to forward data to others, degrading network efficiency. ~\ref{fig:IOD_system} shows an example of a selfish node
+
+%     \begin{figure}[H]
+%         \centering
+%         \includegraphics[width=0.7\textwidth]{Figures/Chapter2/Section2/6.png}
+%         \caption{  Selfish Node ~\cite{tsao2022survey}}
+%         \label{fig: Selfish_Node}
+%     \end{figure}
+    
+%     \item \textbf{Cloud server and storage, data tampering.} Modifying stored data in cloud databases can compromise privacy or disrupt operations.
+% \end{itemize}
 
 
 
-\subsubsection{Security threats on the IoD}
+% \subsubsection{Security threats on the IoD}
 
-The Internet of Drones (IoD) faces several security and privacy challenges. Drones often lack built-in protections, making them prone to data leaks and attacks. Hardware constraints lead to reliance on lightweight encryption and processing protocols. Airspace is divided into zones connected by gates, with each zone having mapped routes and intersections. Zone Service Providers (ZSPs) deliver navigational data to assist drone operations. Figure~\ref{fig:IOD_system} illustrates the overall structure of the IoD communication system.
-
-
-\subsubsection{Confidentiality}
-IoD systems handle sensitive data such as locations, flight paths, and drone identities, which could be exploited for physical attacks. Systems must support drone identification when needed, while minimizing exposure. Insider threats, including personnel with privileged access, can pose significant risks.
-
-\subsubsection{Integrity}
-Limited processing power in drones and ZSPs leads to offloading tasks to cloud services. Unencrypted data is vulnerable to unauthorized access. Large datasets like video streams may be difficult to encrypt, and even when encrypted, processing limitations hinder efficient indexing and search.
-
-\subsubsection{Availability}
-ZSP-drones communication links are attractive targets for denial-of-service, spoofing, and data injection attacks. These threats may require external auditing to detect. Trusted computing platforms can help enforce system integrity, though they may introduce latency or false alarms.
-
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=0.7\textwidth]{Figures/Chapter2/Section2/3.png}
-        \caption{ IoD Communication System Overview ~\cite{tsao2022survey}}
-        \label{fig:IOD_system}
-    \end{figure}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Security solutions and standards}
-
-As UAVs in Flying Ad-Hoc Networks (FANETs) become more prevalent, securing their communication and operations against various threats is essential. These threats include jamming, malware, data tampering, and blackhole attacks, among others. This section examines the key security challenges in FANETs and outlines the solutions developed to address them. These solutions vary from agent-based approaches, which rely on UAV-specific agents, to agent-less methods, depending on the resources available. The section also covers essential security requirements, such as availability, confidentiality, and integrity, which are critical to ensuring the secure operation of UAV networks.
-
-    \begin{figure}[ht]
-        \centering
-        \includegraphics[width=0.7\textwidth]{Figures/Chapter2/Section2/7.png}
-        \caption{ Security threats and solutions based on security requirements ~\cite{tsao2022survey}}
-        \label{fig:threats_solutions}
-    \end{figure}
-
-\subsubsection{Active interfering (jamming)}
-
-Multiple solutions have been developed to address various security threats in FANETs. These include protections against denial of service (DoS), eavesdropping, impersonation, man-in-the-middle (MITM), replay, blackhole and grayhole attacks, GPS spoofing, jamming, collisions, data tampering, and insider threats.
-
-Security methods are generally classified as agent-based or agent-less. Agent-based solutions use device agents, often enhanced by autonomous machine learning algorithms, while agent-less solutions operate without background services. The choice depends on the UAVs’ computational power and application needs.
-
-A security framework outlines twenty-three threats and seven main requirements: availability, confidentiality, privacy, integrity, authentication, authorization, and non-repudiation. Availability stands out as the most critical in FANET environments.
-
-\subsubsection{Backdoormalware}
-
-Currently, there is no specific solution addressing UAV backdoor malware that ensures the confidentiality, availability, integrity, and privacy of FANET communications. While some methods have been developed for mobile nodes in wireless sensor networks, they are not specifically designed for FANET or UAV environments. However, certain techniques involving the detection, tracking, and neutralization of infected nodes may offer potential for addressing future security challenges in UAV networks.
+% The Internet of Drones (IoD) faces several security and privacy challenges. Drones often lack built-in protections, making them prone to data leaks and attacks. Hardware constraints lead to reliance on lightweight encryption and processing protocols. Airspace is divided into zones connected by gates, with each zone having mapped routes and intersections. Zone Service Providers (ZSPs) deliver navigational data to assist drone operations. Figure~\ref{fig:IOD_system} illustrates the overall structure of the IoD communication system.
 
 
-\subsubsection{Blackhole}
+% \subsubsection{Confidentiality}
+% IoD systems handle sensitive data such as locations, flight paths, and drone identities, which could be exploited for physical attacks. Systems must support drone identification when needed, while minimizing exposure. Insider threats, including personnel with privileged access, can pose significant risks.
 
-The Ad-hoc On-demand Distance Vector (AODV) protocol is vulnerable to blackhole attacks, which can disrupt network integrity. Several solutions have been proposed to enhance FANET availability and prevent packet loss by malicious nodes \cite{sen2011mechanism}.
+% \subsubsection{Integrity}
+% Limited processing power in drones and ZSPs leads to offloading tasks to cloud services. Unencrypted data is vulnerable to unauthorized access. Large datasets like video streams may be difficult to encrypt, and even when encrypted, processing limitations hinder efficient indexing and search.
 
-One solution \cite{sen2011mechanism} uses a secure agent unmanned aerial vehicle (SAUAV) system based on AODV. It operates in two phases: first, identifying and removing malicious UAVs, and second, enabling UAVs to discover neighbors and share information about malicious nodes. This method effectively detects malicious nodes and ensures high packet delivery rates with minimal false positives.
+% \subsubsection{Availability}
+% ZSP-drones communication links are attractive targets for denial-of-service, spoofing, and data injection attacks. These threats may require external auditing to detect. Trusted computing platforms can help enforce system integrity, though they may introduce latency or false alarms.
 
-% Another modification to AODV introduces Data Routing Information (DRI) tables and Cross Checking (CC). Each node tracks packet routes through its own DRI. During route discovery, the source node broadcasts a Route Request (RREQ), and an intermediate node responds with a Route Reply (RREP), allowing the source to verify the route's reliability. This helps mitigate blackhole attacks by ensuring only trusted routes are used.
+%     \begin{figure}[H]
+%         \centering
+%         \includegraphics[width=0.7\textwidth]{Figures/Chapter2/Section2/3.png}
+%         \caption{ IoD Communication System Overview ~\cite{tsao2022survey}}
+%         \label{fig:IOD_system}
+%     \end{figure}
 
-A Secure AODV (SAODV) protocol targets blackhole attacks by ignoring the first reply packet from the source node, assuming malicious nodes reply first. This approach filters out malicious nodes attempting to hijack the route discovery process.
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Security solutions and standards}
 
-Additionally, a hierarchical detection and response system (HID-RS) uses a centralized Ground Control Station (GCS) to monitor FANET packets. UAVs send neighboring packets to the GCS, which classifies them as normal, suspect, abnormal, or malicious. The GCS then verifies if relay UAVs send packets and calculates dropped packets. A threshold is set and updated with a Support Vector Machine (SVM) to differentiate between intentional and unintentional packet drops.
+% As UAVs in Flying Ad-Hoc Networks (FANETs) become more prevalent, securing their communication and operations against various threats is essential. These threats include jamming, malware, data tampering, and blackhole attacks, among others. This section examines the key security challenges in FANETs and outlines the solutions developed to address them. These solutions vary from agent-based approaches, which rely on UAV-specific agents, to agent-less methods, depending on the resources available. The section also covers essential security requirements, such as availability, confidentiality, and integrity, which are critical to ensuring the secure operation of UAV networks.
+
+%     \begin{figure}[ht]
+%         \centering
+%         \includegraphics[width=0.7\textwidth]{Figures/Chapter2/Section2/7.png}
+%         \caption{ Security threats and solutions based on security requirements ~\cite{tsao2022survey}}
+%         \label{fig:threats_solutions}
+%     \end{figure}
+
+% \subsubsection{Active interfering (jamming)}
+
+% Multiple solutions have been developed to address various security threats in FANETs. These include protections against denial of service (DoS), eavesdropping, impersonation, man-in-the-middle (MITM), replay, blackhole and grayhole attacks, GPS spoofing, jamming, collisions, data tampering, and insider threats.
+
+% Security methods are generally classified as agent-based or agent-less. Agent-based solutions use device agents, often enhanced by autonomous machine learning algorithms, while agent-less solutions operate without background services. The choice depends on the UAVs’ computational power and application needs.
+
+% A security framework outlines twenty-three threats and seven main requirements: availability, confidentiality, privacy, integrity, authentication, authorization, and non-repudiation. Availability stands out as the most critical in FANET environments.
+
+% \subsubsection{Backdoormalware}
+
+% Currently, there is no specific solution addressing UAV backdoor malware that ensures the confidentiality, availability, integrity, and privacy of FANET communications. While some methods have been developed for mobile nodes in wireless sensor networks, they are not specifically designed for FANET or UAV environments. However, certain techniques involving the detection, tracking, and neutralization of infected nodes may offer potential for addressing future security challenges in UAV networks.
 
 
-\subsubsection{Collisions}
+% \subsubsection{Blackhole}
 
-UAVs can operate in, join, or leave half-duplex FANET networks, which are characterised by high mobility levels and frequent topology changes. Therefore, the MAC layer must provide collision-free communication and enhance the availability of the FANET. The location-oriented directional MAC protocol (LODMAC) increases FANET capacity and availability by integrating neighbouring UAV locations with directional antennas, resolving issues such as collisions and deafness. A collision-free MAC protocol (CF-MAC) uses the CSMA/TDMA MAC protocol with a half-duplex radio channel and omni-directional antennas. To prevent collisions, time slots are assigned to regulate how UAVs join the network. Additionally, to maintain effective and real-time navigation, only authorised UAVs should operate in specific aerial spaces. UAVs broadcast their location to a zone service provider (ZSP), which detects, monitors, and manages UAV operations, checking for abnormal behaviour, such as denial of service (DoS), spoofing, or data tampering attacks that could disrupt normal network operation.
+% The Ad-hoc On-demand Distance Vector (AODV) protocol is vulnerable to blackhole attacks, which can disrupt network integrity. Several solutions have been proposed to enhance FANET availability and prevent packet loss by malicious nodes \cite{sen2011mechanism}.
+
+% One solution \cite{sen2011mechanism} uses a secure agent unmanned aerial vehicle (SAUAV) system based on AODV. It operates in two phases: first, identifying and removing malicious UAVs, and second, enabling UAVs to discover neighbors and share information about malicious nodes. This method effectively detects malicious nodes and ensures high packet delivery rates with minimal false positives.
+
+% % Another modification to AODV introduces Data Routing Information (DRI) tables and Cross Checking (CC). Each node tracks packet routes through its own DRI. During route discovery, the source node broadcasts a Route Request (RREQ), and an intermediate node responds with a Route Reply (RREP), allowing the source to verify the route's reliability. This helps mitigate blackhole attacks by ensuring only trusted routes are used.
+
+% A Secure AODV (SAODV) protocol targets blackhole attacks by ignoring the first reply packet from the source node, assuming malicious nodes reply first. This approach filters out malicious nodes attempting to hijack the route discovery process.
+
+% Additionally, a hierarchical detection and response system (HID-RS) uses a centralized Ground Control Station (GCS) to monitor FANET packets. UAVs send neighboring packets to the GCS, which classifies them as normal, suspect, abnormal, or malicious. The GCS then verifies if relay UAVs send packets and calculates dropped packets. A threshold is set and updated with a Support Vector Machine (SVM) to differentiate between intentional and unintentional packet drops.
+
+
+% \subsubsection{Collisions}
+
+% UAVs can operate in, join, or leave half-duplex FANET networks, which are characterised by high mobility levels and frequent topology changes. Therefore, the MAC layer must provide collision-free communication and enhance the availability of the FANET. The location-oriented directional MAC protocol (LODMAC) increases FANET capacity and availability by integrating neighbouring UAV locations with directional antennas, resolving issues such as collisions and deafness. A collision-free MAC protocol (CF-MAC) uses the CSMA/TDMA MAC protocol with a half-duplex radio channel and omni-directional antennas. To prevent collisions, time slots are assigned to regulate how UAVs join the network. Additionally, to maintain effective and real-time navigation, only authorised UAVs should operate in specific aerial spaces. UAVs broadcast their location to a zone service provider (ZSP), which detects, monitors, and manages UAV operations, checking for abnormal behaviour, such as denial of service (DoS), spoofing, or data tampering attacks that could disrupt normal network operation.
+
+
+
+
+
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
