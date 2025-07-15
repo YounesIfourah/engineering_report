@@ -1,39 +1,62 @@
-[0] Config.pm:308> INFO - This is Biber 2.20
-[0] Config.pm:311> INFO - Logfile is 'main.blg'
-[94] biber-MSWIN64:340> INFO - === 
-[128] Biber.pm:420> INFO - Reading 'main.bcf'
-[260] Biber.pm:994> INFO - Found 38 citekeys in bib section 0
-[279] Biber.pm:4463> INFO - Processing section 0
-[294] Biber.pm:4654> INFO - Looking for bibtex file 'references.bib' for section 0
-[335] bibtex.pm:1713> INFO - LaTeX decoding ...
-[340] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
-[341] Biber.pm:4654> INFO - Looking for bibtex file 'biblio.bib' for section 0
-[384] bibtex.pm:1713> INFO - LaTeX decoding ...
-[460] bibtex.pm:1519> INFO - Found BibTeX data source 'biblio.bib'
-[596] Utils.pm:410> ERROR - Name "J. Abdulridha, Y. Ampatzidis, P. Kakarla, S. C. Roberts" has too many commas, skipping entry 'Abdulridha2020'
-[597] Utils.pm:410> ERROR - Name "A. A. Tamouridou, T. K. Alexandridis, X. E. Pantazi, A. L. Lagopodi, J. Kashefi, D. Kasampalis, G. Kontouris, D. Moshou" has too many commas, skipping entry 'Tamouridou2017'
-[696] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[696] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[697] Biber.pm:4283> INFO - Sorting list 'apa/apasortcite//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
-[697] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
-[768] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[769] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[769] Biber.pm:4283> INFO - Sorting list 'apa/global//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
-[769] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
-[812] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[863] bbl.pm:779> INFO - Output to main.bbl
-[864] Biber.pm:131> WARN - legacy month field 'May--June' in entry 'idk' is not an integer - this will probably not sort properly.
-[865] Biber.pm:131> WARN - legacy month field 'May--June' in entry 'ucgun2021uavcharging' is not an integer - this will probably not sort properly.
-[865] Biber.pm:131> WARN - legacy month field 'may' in entry 'allouch2019mavsec' is not an integer - this will probably not sort properly.
-[866] Biber.pm:131> WARN - legacy month field 'March' in entry 'singh2015experimental' is not an integer - this will probably not sort properly.
-[866] Biber.pm:131> WARN - legacy month field 'Mar' in entry 'annepu2021radial' is not an integer - this will probably not sort properly.
-[866] Biber.pm:131> WARN - Entry with key 'Abdulridha2020' in section '0' is cited and found but not created (likely due to sourcemap)
-[866] Biber.pm:131> WARN - Entry with key 'Tamouridou2017' in section '0' is cited and found but not created (likely due to sourcemap)
-[866] Biber.pm:131> WARN - legacy month field 'April' in entry 'elloumi2018monitoring' is not an integer - this will probably not sort properly.
-[866] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\mps\AppData\Local\Temp\biber_tmp_qPzN\a9e03cb3043b9e2c02591da84105bb68_14616.utf8, line 368, warning: 4 characters of junk seen at toplevel
-[867] Biber.pm:131> WARN - I didn't find a database entry for 'ref52' (section 0)
-[867] Biber.pm:131> WARN - I didn't find a database entry for 'ref54' (section 0)
-[867] Biber.pm:131> WARN - I didn't find a database entry for 'dqn_multi_115' (section 0)
-[867] Biber.pm:131> WARN - I didn't find a database entry for '244' (section 0)
-[867] Biber.pm:133> INFO - WARNINGS: 13
-[867] Biber.pm:136> INFO - ERRORS: 2
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 14 items.
+A level-1 auxiliary file: titlepage.aux
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+A level-1 auxiliary file: abstract.aux
+Reallocating 'name_of_file' (item size: 1) to 17 items.
+A level-1 auxiliary file: introduction.aux
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+A level-1 auxiliary file: chapter1.aux
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+A level-1 auxiliary file: chapter2.aux
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+A level-1 auxiliary file: chapter3.aux
+Reallocating 'name_of_file' (item size: 1) to 14 items.
+A level-1 auxiliary file: syntheses.aux
+I found no \citation commands---while reading file main.aux
+I found no \bibdata command---while reading file main.aux
+I found no \bibstyle command---while reading file main.aux
+You've used 0 entries,
+            0 wiz_defined-function locations,
+            90 strings with 572 characters,
+and the built_in function-call counts, 0 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 0
+:= -- 0
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 0
+format.name$ -- 0
+if$ -- 0
+int.to.chr$ -- 0
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 0
+num.names$ -- 0
+pop$ -- 0
+preamble$ -- 0
+purify$ -- 0
+quote$ -- 0
+skip$ -- 0
+stack$ -- 0
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 0
+width$ -- 0
+write$ -- 0
+(There were 3 error messages)
