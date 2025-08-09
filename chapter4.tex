@@ -1,0 +1,15 @@
+\chapter{Conception}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Introduction %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Introduction}
+
+This chapter presents the design choices and reasoning behind the development of our Collaborative Highway Surveillance (CHS) system for detecting and responding to speeding violations in real time. It introduces the hybrid architecture combining UAVs and ground speed sensors, outlines the challenges related to communication latency, energy constraints, and coverage optimization, and explains the strategies applied to ensure reliable data exchange between all components.
+
+We then describe the control logic of the system, which integrates a distributed drone selection algorithm based on residual energy and proximity, as well as a routing mechanism leveraging a hierarchical network of ground nodes to guide UAVs towards high-infraction zones. While this architecture ensures adaptability and responsiveness, the integration of prediction capabilities using machine learning introduces additional computational requirements that may challenge onboard resources.
+
+To address this, we design a lightweight communication and decision-making protocol using MAVLink and UDP, enabling drones to exchange essential operational data efficiently while offloading heavy processing to ground stations when possible. Various simplification techniques and modular implementations are applied to balance decision accuracy with real-time performance and system scalability.
+
+By combining robust communication, an adaptive control algorithm, and predictive analytics, the goal is to build a surveillance system that is both effective and deployable in real-world highway monitoring scenarios.
+
+\section{Overview of the Proposed Solution}

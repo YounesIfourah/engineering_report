@@ -1,0 +1,13 @@
+\chapter{Implementation} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Introduction %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Introduction}
+
+This chapter describes the implementation details of the Collaborative Highway Surveillance (CHS) system developed for real-time detection of speeding violations. It presents the tools, libraries, and development environments used to build, integrate, and test the communication modules, routing logic, and prediction components. Special attention is given to the configuration and synchronization of UAVs and ground nodes, ensuring stable data exchange and minimal latency across the network.
+
+Next, we detail the development of the communication protocol, combining MAVLink for drone-to-drone and drone-to-ground communication with UDP for lightweight sensor data transmission. The distributed drone selection algorithm is implemented to account for residual energy, proximity to target zones, and avoidance of redundant coverage.
+
+We then describe the integration of the machine learning prediction module, trained on historical and simulated speeding data to anticipate infraction hotspots. The implementation ensures that computationally heavy operations are executed on ground stations when possible, preserving UAV autonomy.
+
+The final section focuses on system optimization, including strategies for reducing energy consumption, improving communication reliability, and achieving a balance between real-time responsiveness, processing requirements, and operational scalability.

@@ -1,35 +1,38 @@
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\if@rl \I {1.1}\else \textLR {1.1}\fi }{\ignorespaces Capabilities of fixed-wing/multi-rotors (adapted from: \blx@tocontentsinit {0}\cite {khan2024smarttraffic})}}{4}{figure.caption.5}%
-\contentsline {figure}{\numberline {\if@rl \I {2.1}\else \textLR {1.2}\fi }{\ignorespaces Illustration of UAV Types Classified by Design )}}{4}{figure.caption.6}%
-\contentsline {figure}{\numberline {\if@rl \I {3.1}\else \textLR {1.3}\fi }{\ignorespaces Multi-rotors Layout (adapted from: \blx@tocontentsinit {0}\cite {chen2016state})}}{5}{figure.caption.7}%
-\contentsline {figure}{\numberline {\if@rl \I {4.1}\else \textLR {1.4}\fi }{\ignorespaces Principal Movements of a UAV in 3D Space (adapted from: \blx@tocontentsinit {0}\cite {almahamid2024viznav})}}{10}{figure.caption.14}%
-\contentsline {figure}{\numberline {\if@rl \I {5.1}\else \textLR {1.5}\fi }{\ignorespaces Structure of a MAVLink 1.0 packet \blx@tocontentsinit {0}\cite {mavlinkio}.}}{13}{figure.caption.17}%
-\contentsline {figure}{\numberline {\if@rl \I {6.1}\else \textLR {1.6}\fi }{\ignorespaces MAVLink 2.0 Header Structure.}}{14}{figure.caption.20}%
-\contentsline {figure}{\numberline {\if@rl \I {7.1}\else \textLR {1.7}\fi }{\ignorespaces centralized communication architecture \blx@tocontentsinit {0}\cite {Chen2020}}}{17}{figure.caption.23}%
-\contentsline {figure}{\numberline {\if@rl \I {8.1}\else \textLR {1.8}\fi }{\ignorespaces single-group swarm Ad hoc network \blx@tocontentsinit {0}\cite {Chen2020}}}{18}{figure.caption.25}%
-\contentsline {figure}{\numberline {\if@rl \I {9.1}\else \textLR {1.9}\fi }{\ignorespaces intra-swarm communication architecture: (a): ring rchitecture, (b) star architectue, (c): meshedarchitecture. \blx@tocontentsinit {0}\cite {Chen2020}}}{19}{figure.caption.26}%
-\contentsline {figure}{\numberline {\if@rl \I {10.1}\else \textLR {1.10}\fi }{\ignorespaces multi-group swarm Ad hoc network \blx@tocontentsinit {0}\cite {Chen2020}}}{20}{figure.caption.28}%
-\contentsline {figure}{\numberline {\if@rl \I {11.1}\else \textLR {1.11}\fi }{\ignorespaces multi-layer swarm Ad hoc network \blx@tocontentsinit {0}\cite {Chen2020}}}{20}{figure.caption.30}%
-\contentsline {figure}{\numberline {\if@rl \I {12.1}\else \textLR {1.12}\fi }{\ignorespaces The rationales for common routing technologies of UAV ad hoc network.\blx@tocontentsinit {0}\cite {Chen2020}.}}{22}{figure.caption.32}%
-\contentsline {figure}{\numberline {\if@rl \I {13.1}\else \textLR {1.13}\fi }{\ignorespaces Classification of all routing protocols \blx@tocontentsinit {0}\cite {Chen2020}.}}{23}{figure.caption.33}%
-\contentsline {figure}{\numberline {\if@rl \I {14.1}\else \textLR {1.14}\fi }{\ignorespaces Multilevel Hierarchical Routing in a UAV swarm Ad hoc network}}{24}{figure.caption.35}%
+\contentsline {figure}{\numberline {\if@rl \I {1.1}\else \textLR {1.1}\fi }{\ignorespaces Capabilities of fixed-wing/multi-rotors (adapted from: \blx@tocontentsinit {0}\cite {khan2024smarttraffic})}}{5}{figure.caption.6}%
+\contentsline {figure}{\numberline {\if@rl \I {2.1}\else \textLR {1.2}\fi }{\ignorespaces Illustration of UAV Types Classified by Design )}}{5}{figure.caption.7}%
+\contentsline {figure}{\numberline {\if@rl \I {3.1}\else \textLR {1.3}\fi }{\ignorespaces Multi-rotors Layout (adapted from: \blx@tocontentsinit {0}\cite {chen2016state})}}{6}{figure.caption.8}%
+\contentsline {figure}{\numberline {\if@rl \I {4.1}\else \textLR {1.4}\fi }{\ignorespaces Principal Movements of a UAV in 3D Space (adapted from: \blx@tocontentsinit {0}\cite {almahamid2024viznav})}}{11}{figure.caption.15}%
+\contentsline {figure}{\numberline {\if@rl \I {5.1}\else \textLR {1.5}\fi }{\ignorespaces Structure of a MAVLink 1.0 packet \blx@tocontentsinit {0}\cite {mavlinkio}.}}{14}{figure.caption.18}%
+\contentsline {figure}{\numberline {\if@rl \I {6.1}\else \textLR {1.6}\fi }{\ignorespaces MAVLink 2.0 Header Structure.}}{15}{figure.caption.21}%
+\contentsline {figure}{\numberline {\if@rl \I {7.1}\else \textLR {1.7}\fi }{\ignorespaces centralized communication architecture \blx@tocontentsinit {0}\cite {Chen2020}}}{18}{figure.caption.24}%
+\contentsline {figure}{\numberline {\if@rl \I {8.1}\else \textLR {1.8}\fi }{\ignorespaces single-group swarm Ad hoc network \blx@tocontentsinit {0}\cite {Chen2020}}}{19}{figure.caption.26}%
+\contentsline {figure}{\numberline {\if@rl \I {9.1}\else \textLR {1.9}\fi }{\ignorespaces intra-swarm communication architecture: (a): ring rchitecture, (b) star architectue, (c): meshedarchitecture. \blx@tocontentsinit {0}\cite {Chen2020}}}{20}{figure.caption.27}%
+\contentsline {figure}{\numberline {\if@rl \I {10.1}\else \textLR {1.10}\fi }{\ignorespaces multi-group swarm Ad hoc network \blx@tocontentsinit {0}\cite {Chen2020}}}{21}{figure.caption.29}%
+\contentsline {figure}{\numberline {\if@rl \I {11.1}\else \textLR {1.11}\fi }{\ignorespaces multi-layer swarm Ad hoc network \blx@tocontentsinit {0}\cite {Chen2020}}}{21}{figure.caption.31}%
+\contentsline {figure}{\numberline {\if@rl \I {12.1}\else \textLR {1.12}\fi }{\ignorespaces The rationales for common routing technologies of UAV ad hoc network.\blx@tocontentsinit {0}\cite {Chen2020}.}}{23}{figure.caption.33}%
+\contentsline {figure}{\numberline {\if@rl \I {13.1}\else \textLR {1.13}\fi }{\ignorespaces Classification of all routing protocols \blx@tocontentsinit {0}\cite {Chen2020}.}}{24}{figure.caption.34}%
+\contentsline {figure}{\numberline {\if@rl \I {14.1}\else \textLR {1.14}\fi }{\ignorespaces Multilevel Hierarchical Routing in a UAV swarm Ad hoc network}}{25}{figure.caption.36}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\if@rl \I {1.2}\else \textLR {2.1}\fi }{\ignorespaces The MLP for UAV-based localization of a WSN node using the Gaussian activation function \blx@tocontentsinit {0}\cite {annepu2020uav} and the RBF model using the Sigmoid activation function \blx@tocontentsinit {0}\cite {annepu2021radial}}}{30}{figure.caption.41}%
-\contentsline {figure}{\numberline {\if@rl \I {2.2}\else \textLR {2.2}\fi }{\ignorespaces Schematic overview of a DQN-based framework for UAV trajectory and mission planning. The model is deployed onboard the UAV and trained to generate optimal policies for both path planning and radio resource allocation. \blx@tocontentsinit {0}\cite {kurunathan2022machine}}}{31}{figure.caption.45}%
-\contentsline {figure}{\numberline {\if@rl \I {3.2}\else \textLR {2.3}\fi }{\ignorespaces DDPG Architecture Overview with Actor-Critic Networks and Experience Replay for UAV Control \blx@tocontentsinit {0}\cite {kurunathan2022machine}}}{33}{figure.caption.47}%
-\contentsline {figure}{\numberline {\if@rl \I {4.2}\else \textLR {2.4}\fi }{\ignorespaces A multi-agent DRL structure where each UAV trains an onboard neural network to determine the optimal joint actions~\blx@tocontentsinit {0}\cite {kurunathan2022machine}}}{34}{figure.caption.49}%
-\contentsline {figure}{\numberline {\if@rl \I {5.2}\else \textLR {2.5}\fi }{\ignorespaces Convolutional Neural Networks in Image Processing~\blx@tocontentsinit {0}\cite {kurunathan2022machine}}}{37}{figure.caption.51}%
-\contentsline {figure}{\numberline {\if@rl \I {6.2}\else \textLR {2.6}\fi }{\ignorespaces Generative Adversarial Network Framework for UAVs~\blx@tocontentsinit {0}\cite {kurunathan2022machine}}}{38}{figure.caption.53}%
-\contentsline {figure}{\numberline {\if@rl \I {7.2}\else \textLR {2.7}\fi }{\ignorespaces Centroid-Based Coordination in Multi-UAV Surveillance Using K-Means Clustering~\blx@tocontentsinit {0}\cite {huang2021navigating}}}{40}{figure.caption.56}%
-\contentsline {figure}{\numberline {\if@rl \I {8.2}\else \textLR {2.8}\fi }{\ignorespaces Trajectory Planning for UAVs Using GMM-Based Environment Modeling~\blx@tocontentsinit {0}\cite {huang2021navigating}}}{41}{figure.caption.58}%
+\contentsline {figure}{\numberline {\if@rl \I {1.2}\else \textLR {2.1}\fi }{\ignorespaces The MLP for UAV-based localization of a WSN node using the Gaussian activation function \blx@tocontentsinit {0}\cite {annepu2020uav} and the RBF model using the Sigmoid activation function \blx@tocontentsinit {0}\cite {annepu2021radial}}}{31}{figure.caption.43}%
+\contentsline {figure}{\numberline {\if@rl \I {2.2}\else \textLR {2.2}\fi }{\ignorespaces Schematic overview of a DQN-based framework for UAV trajectory and mission planning. The model is deployed onboard the UAV and trained to generate optimal policies for both path planning and radio resource allocation. \blx@tocontentsinit {0}\cite {kurunathan2022machine}}}{32}{figure.caption.47}%
+\contentsline {figure}{\numberline {\if@rl \I {3.2}\else \textLR {2.3}\fi }{\ignorespaces DDPG Architecture Overview with Actor-Critic Networks and Experience Replay for UAV Control \blx@tocontentsinit {0}\cite {kurunathan2022machine}}}{34}{figure.caption.49}%
+\contentsline {figure}{\numberline {\if@rl \I {4.2}\else \textLR {2.4}\fi }{\ignorespaces A multi-agent DRL structure where each UAV trains an onboard neural network to determine the optimal joint actions~\blx@tocontentsinit {0}\cite {kurunathan2022machine}}}{35}{figure.caption.51}%
+\contentsline {figure}{\numberline {\if@rl \I {5.2}\else \textLR {2.5}\fi }{\ignorespaces Convolutional Neural Networks in Image Processing~\blx@tocontentsinit {0}\cite {kurunathan2022machine}}}{38}{figure.caption.53}%
+\contentsline {figure}{\numberline {\if@rl \I {6.2}\else \textLR {2.6}\fi }{\ignorespaces Generative Adversarial Network Framework for UAVs~\blx@tocontentsinit {0}\cite {kurunathan2022machine}}}{39}{figure.caption.55}%
+\contentsline {figure}{\numberline {\if@rl \I {7.2}\else \textLR {2.7}\fi }{\ignorespaces Centroid-Based Coordination in Multi-UAV Surveillance Using K-Means Clustering~\blx@tocontentsinit {0}\cite {huang2021navigating}}}{41}{figure.caption.58}%
+\contentsline {figure}{\numberline {\if@rl \I {8.2}\else \textLR {2.8}\fi }{\ignorespaces Trajectory Planning for UAVs Using GMM-Based Environment Modeling~\blx@tocontentsinit {0}\cite {huang2021navigating}}}{42}{figure.caption.60}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\if@rl \I {1.3}\else \textLR {3.1}\fi }{\ignorespaces Airborne Traffic Surveillance System (ATSS) Architecture}}{44}{figure.caption.59}%
-\contentsline {figure}{\numberline {\if@rl \I {2.3}\else \textLR {3.2}\fi }{\ignorespaces Proposed Architecture of the Video Relay Model}}{47}{figure.caption.60}%
-\contentsline {figure}{\numberline {\if@rl \I {3.3}\else \textLR {3.3}\fi }{\ignorespaces Proposed Architecture of the UAV-Based Traffic Surveillance System (Source: \blx@tocontentsinit {0}\cite {khan2024smarttraffic})}}{50}{figure.caption.61}%
-\contentsline {figure}{\numberline {\if@rl \I {4.3}\else \textLR {3.4}\fi }{\ignorespaces Traffic monitoring techniques (Source: \blx@tocontentsinit {0}\cite {elloumi2018monitoring})}}{57}{figure.caption.66}%
-\contentsline {figure}{\numberline {\if@rl \I {5.3}\else \textLR {3.5}\fi }{\ignorespaces Connected dominating set (CDS) formation (Source: \blx@tocontentsinit {0}\cite {oubbati2019leveraging})}}{63}{figure.caption.71}%
-\contentsline {figure}{\numberline {\if@rl \I {6.3}\else \textLR {3.6}\fi }{\ignorespaces Hello packet format (Source: \blx@tocontentsinit {0}\cite {oubbati2019leveraging})}}{64}{figure.caption.72}%
-\contentsline {figure}{\numberline {\if@rl \I {7.3}\else \textLR {3.7}\fi }{\ignorespaces alert model functioning (Source: \blx@tocontentsinit {0}\cite {oubbati2019leveraging})}}{65}{figure.caption.75}%
-\contentsline {figure}{\numberline {\if@rl \I {8.3}\else \textLR {3.8}\fi }{\ignorespaces CHS System Architecture (Source: \blx@tocontentsinit {0}\cite {bashir2022closed})}}{69}{figure.caption.81}%
-\contentsline {figure}{\numberline {\if@rl \I {9.3}\else \textLR {3.9}\fi }{\ignorespaces Movement Control Algorithm and Hop Count Assignment (Source: \blx@tocontentsinit {0}\cite {bashir2022closed})}}{70}{figure.caption.82}%
+\contentsline {figure}{\numberline {\if@rl \I {1.3}\else \textLR {3.1}\fi }{\ignorespaces Airborne Traffic Surveillance System (ATSS) Architecture}}{45}{figure.caption.62}%
+\contentsline {figure}{\numberline {\if@rl \I {2.3}\else \textLR {3.2}\fi }{\ignorespaces Proposed Architecture of the Video Relay Model}}{48}{figure.caption.63}%
+\contentsline {figure}{\numberline {\if@rl \I {3.3}\else \textLR {3.3}\fi }{\ignorespaces Proposed Architecture of the UAV-Based Traffic Surveillance System (Source: \blx@tocontentsinit {0}\cite {khan2024smarttraffic})}}{51}{figure.caption.64}%
+\contentsline {figure}{\numberline {\if@rl \I {4.3}\else \textLR {3.4}\fi }{\ignorespaces Traffic monitoring techniques (Source: \blx@tocontentsinit {0}\cite {elloumi2018monitoring})}}{58}{figure.caption.69}%
+\contentsline {figure}{\numberline {\if@rl \I {5.3}\else \textLR {3.5}\fi }{\ignorespaces Connected dominating set (CDS) formation (Source: \blx@tocontentsinit {0}\cite {oubbati2019leveraging})}}{64}{figure.caption.74}%
+\contentsline {figure}{\numberline {\if@rl \I {6.3}\else \textLR {3.6}\fi }{\ignorespaces Hello packet format (Source: \blx@tocontentsinit {0}\cite {oubbati2019leveraging})}}{65}{figure.caption.75}%
+\contentsline {figure}{\numberline {\if@rl \I {7.3}\else \textLR {3.7}\fi }{\ignorespaces alert model functioning (Source: \blx@tocontentsinit {0}\cite {oubbati2019leveraging})}}{66}{figure.caption.78}%
+\contentsline {figure}{\numberline {\if@rl \I {8.3}\else \textLR {3.8}\fi }{\ignorespaces CHS System Architecture (Source: \blx@tocontentsinit {0}\cite {bashir2022closed})}}{70}{figure.caption.84}%
+\contentsline {figure}{\numberline {\if@rl \I {9.3}\else \textLR {3.9}\fi }{\ignorespaces Movement Control Algorithm and Hop Count Assignment (Source: \blx@tocontentsinit {0}\cite {bashir2022closed})}}{71}{figure.caption.85}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

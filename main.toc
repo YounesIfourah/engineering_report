@@ -8,237 +8,243 @@
 \select@language {english}
 \contentsline {chapter}{General introduction}{1}{chapter*.4}%
 \select@language {english}
-\contentsline {chapter}{\numberline {1}\bgroup \beginL \latintext UAV Topologies, standards and Communication Protocols\endL \egroup }{3}{chapter.1}%
+\contentsline {part}{I\hspace {1em}\bgroup \beginL \latintext State of the art\endL \egroup }{3}{part.1}%
 \select@language {english}
-\contentsline {section}{\numberline {\if@rl \I {1.1}\else \textLR {1.1}\fi }\bgroup \beginL \latintext Introduction\endL \egroup }{3}{section.1.1}%
+\contentsline {chapter}{\numberline {1}\bgroup \beginL \latintext UAV Topologies, standards and Communication Protocols\endL \egroup }{4}{chapter.1}%
 \select@language {english}
-\contentsline {section}{\numberline {\if@rl \I {2.1}\else \textLR {1.2}\fi }\bgroup \beginL \latintext UAV Classification\endL \egroup }{3}{section.1.2}%
+\contentsline {section}{\numberline {\if@rl \I {1.1}\else \textLR {1.1}\fi }\bgroup \beginL \latintext UAV Classification\endL \egroup }{4}{section.1.1}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {1.2.1}\else \textLR {1.2.1}\fi }\bgroup \beginL \latintext Design-Based Classification\endL \egroup }{4}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {\if@rl \I {1.1.1}\else \textLR {1.1.1}\fi }\bgroup \beginL \latintext Design-Based Classification\endL \egroup }{5}{subsection.1.1.1}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {2.2.1}\else \textLR {1.2.2}\fi }\bgroup \beginL \latintext Performance-Based Classification\endL \egroup }{6}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {\if@rl \I {2.1.1}\else \textLR {1.1.2}\fi }\bgroup \beginL \latintext Performance-Based Classification\endL \egroup }{7}{subsection.1.1.2}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {3.2.1}\else \textLR {1.2.3}\fi }\bgroup \beginL \latintext Discussion\endL \egroup }{8}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {\if@rl \I {3.1.1}\else \textLR {1.1.3}\fi }\bgroup \beginL \latintext Discussion\endL \egroup }{9}{subsection.1.1.3}%
 \select@language {english}
-\contentsline {subsubsection}{\bgroup \beginL \latintext \endL \egroup }{8}{section*.13}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext \endL \egroup }{9}{section*.14}%
 \select@language {english}
-\contentsline {section}{\numberline {\if@rl \I {3.1}\else \textLR {1.3}\fi }\bgroup \beginL \latintext UAV Characteristics\endL \egroup }{8}{section.1.3}%
+\contentsline {section}{\numberline {\if@rl \I {2.1}\else \textLR {1.2}\fi }\bgroup \beginL \latintext UAV Characteristics\endL \egroup }{9}{section.1.2}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {1.3.1}\else \textLR {1.3.1}\fi }\bgroup \beginL \latintext Speed and Flight Time\endL \egroup }{8}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {\if@rl \I {1.2.1}\else \textLR {1.2.1}\fi }\bgroup \beginL \latintext Speed and Flight Time\endL \egroup }{9}{subsection.1.2.1}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {2.3.1}\else \textLR {1.3.2}\fi }\bgroup \beginL \latintext Payload\endL \egroup }{9}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {\if@rl \I {2.2.1}\else \textLR {1.2.2}\fi }\bgroup \beginL \latintext Payload\endL \egroup }{10}{subsection.1.2.2}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {3.3.1}\else \textLR {1.3.3}\fi }\bgroup \beginL \latintext Range and Altitude\endL \egroup }{9}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {\if@rl \I {3.2.1}\else \textLR {1.2.3}\fi }\bgroup \beginL \latintext Range and Altitude\endL \egroup }{10}{subsection.1.2.3}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {4.3.1}\else \textLR {1.3.4}\fi }\bgroup \beginL \latintext UAV Principal Movements\endL \egroup }{10}{subsection.1.3.4}%
+\contentsline {subsection}{\numberline {\if@rl \I {4.2.1}\else \textLR {1.2.4}\fi }\bgroup \beginL \latintext UAV Principal Movements\endL \egroup }{11}{subsection.1.2.4}%
 \select@language {english}
-\contentsline {section}{\numberline {\if@rl \I {4.1}\else \textLR {1.4}\fi }\bgroup \beginL \latintext Communication protocols for UAVs\endL \egroup }{11}{section.1.4}%
+\contentsline {section}{\numberline {\if@rl \I {3.1}\else \textLR {1.3}\fi }\bgroup \beginL \latintext Communication protocols for UAVs\endL \egroup }{12}{section.1.3}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {1.4.1}\else \textLR {1.4.1}\fi }\bgroup \beginL \latintext UranusLink Protocol\endL \egroup }{11}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {\if@rl \I {1.3.1}\else \textLR {1.3.1}\fi }\bgroup \beginL \latintext UranusLink Protocol\endL \egroup }{12}{subsection.1.3.1}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {2.4.1}\else \textLR {1.4.2}\fi }\bgroup \beginL \latintext UAVCAN protocol\endL \egroup }{12}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {\if@rl \I {2.3.1}\else \textLR {1.3.2}\fi }\bgroup \beginL \latintext UAVCAN protocol\endL \egroup }{13}{subsection.1.3.2}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {3.4.1}\else \textLR {1.4.3}\fi }\bgroup \beginL \latintext MAVLink protocol\endL \egroup }{12}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {\if@rl \I {3.3.1}\else \textLR {1.3.3}\fi }\bgroup \beginL \latintext MAVLink protocol\endL \egroup }{13}{subsection.1.3.3}%
 \select@language {english}
-\contentsline {subsubsection}{\bgroup \beginL \latintext MAVLink 1.0 header protocol\endL \egroup }{13}{section*.16}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext MAVLink 1.0 header protocol\endL \egroup }{14}{section*.17}%
 \select@language {english}
-\contentsline {subsubsection}{\bgroup \beginL \latintext MAVLink 2.0 Protocol\endL \egroup }{14}{section*.19}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext MAVLink 2.0 Protocol\endL \egroup }{15}{section*.20}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {4.4.1}\else \textLR {1.4.4}\fi }\bgroup \beginL \latintext Disscussion\endL \egroup }{16}{subsection.1.4.4}%
+\contentsline {subsection}{\numberline {\if@rl \I {4.3.1}\else \textLR {1.3.4}\fi }\bgroup \beginL \latintext Disscussion\endL \egroup }{17}{subsection.1.3.4}%
 \select@language {english}
-\contentsline {section}{\numberline {\if@rl \I {5.1}\else \textLR {1.5}\fi }\bgroup \beginL \latintext UAVs Architectures\endL \egroup }{16}{section.1.5}%
+\contentsline {section}{\numberline {\if@rl \I {4.1}\else \textLR {1.4}\fi }\bgroup \beginL \latintext UAVs Architectures\endL \egroup }{17}{section.1.4}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {1.5.1}\else \textLR {1.5.1}\fi }\bgroup \beginL \latintext Centralized Communication Architecture\endL \egroup }{17}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {\if@rl \I {1.4.1}\else \textLR {1.4.1}\fi }\bgroup \beginL \latintext Centralized Communication Architecture\endL \egroup }{18}{subsection.1.4.1}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {2.5.1}\else \textLR {1.5.2}\fi }\bgroup \beginL \latintext Decentralized Communication Architecture\endL \egroup }{18}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {\if@rl \I {2.4.1}\else \textLR {1.4.2}\fi }\bgroup \beginL \latintext Decentralized Communication Architecture\endL \egroup }{19}{subsection.1.4.2}%
 \select@language {english}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Single-Group Swarm Ad Hoc Network\endL \egroup }{18}{section*.24}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Single-Group Swarm Ad Hoc Network\endL \egroup }{19}{section*.25}%
 \select@language {english}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Multi-Group Swarm Ad hoc Network\endL \egroup }{19}{section*.27}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Multi-Group Swarm Ad hoc Network\endL \egroup }{20}{section*.28}%
 \select@language {english}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Multi-layer Swarm Ad hoc Network\endL \egroup }{19}{section*.29}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Multi-layer Swarm Ad hoc Network\endL \egroup }{20}{section*.30}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {3.5.1}\else \textLR {1.5.3}\fi }\bgroup \beginL \latintext Discussion\endL \egroup }{20}{subsection.1.5.3}%
+\contentsline {subsection}{\numberline {\if@rl \I {3.4.1}\else \textLR {1.4.3}\fi }\bgroup \beginL \latintext Discussion\endL \egroup }{21}{subsection.1.4.3}%
 \select@language {english}
-\contentsline {section}{\numberline {\if@rl \I {6.1}\else \textLR {1.6}\fi }\bgroup \beginL \latintext Routing Protocols\endL \egroup }{21}{section.1.6}%
+\contentsline {section}{\numberline {\if@rl \I {5.1}\else \textLR {1.5}\fi }\bgroup \beginL \latintext Routing Protocols\endL \egroup }{22}{section.1.5}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {1.6.1}\else \textLR {1.6.1}\fi }\bgroup \beginL \latintext Routing Technologies\endL \egroup }{22}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {\if@rl \I {1.5.1}\else \textLR {1.5.1}\fi }\bgroup \beginL \latintext Routing Technologies\endL \egroup }{23}{subsection.1.5.1}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {2.6.1}\else \textLR {1.6.2}\fi }\bgroup \beginL \latintext The Classification of Routing Protocols\endL \egroup }{23}{subsection.1.6.2}%
+\contentsline {subsection}{\numberline {\if@rl \I {2.5.1}\else \textLR {1.5.2}\fi }\bgroup \beginL \latintext The Classification of Routing Protocols\endL \egroup }{24}{subsection.1.5.2}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {3.6.1}\else \textLR {1.6.3}\fi }\bgroup \beginL \latintext Topology-Based Routing Protocols\endL \egroup }{23}{subsection.1.6.3}%
+\contentsline {subsection}{\numberline {\if@rl \I {3.5.1}\else \textLR {1.5.3}\fi }\bgroup \beginL \latintext Topology-Based Routing Protocols\endL \egroup }{24}{subsection.1.5.3}%
 \select@language {english}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Static Routing Protocols\endL \egroup }{23}{section*.34}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Static Routing Protocols\endL \egroup }{24}{section*.35}%
 \select@language {english}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Proactive Routing Protocols\endL \egroup }{24}{section*.36}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Proactive Routing Protocols\endL \egroup }{25}{section*.37}%
 \select@language {english}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Reactive Routing Protocols\endL \egroup }{25}{section*.37}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Reactive Routing Protocols\endL \egroup }{26}{section*.38}%
 \select@language {english}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Hybrid Routing Protocols\endL \egroup }{25}{section*.38}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Hybrid Routing Protocols\endL \egroup }{26}{section*.39}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {4.6.1}\else \textLR {1.6.4}\fi }\bgroup \beginL \latintext Geographic/Position-Based Routing Protocols\endL \egroup }{26}{subsection.1.6.4}%
+\contentsline {subsection}{\numberline {\if@rl \I {4.5.1}\else \textLR {1.5.4}\fi }\bgroup \beginL \latintext Geographic/Position-Based Routing Protocols\endL \egroup }{27}{subsection.1.5.4}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {5.6.1}\else \textLR {1.6.5}\fi }\bgroup \beginL \latintext Swarm Intelligence-Based Routing Protocols\endL \egroup }{26}{subsection.1.6.5}%
+\contentsline {subsection}{\numberline {\if@rl \I {5.5.1}\else \textLR {1.5.5}\fi }\bgroup \beginL \latintext Swarm Intelligence-Based Routing Protocols\endL \egroup }{27}{subsection.1.5.5}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {6.6.1}\else \textLR {1.6.6}\fi }\bgroup \beginL \latintext Discussion\endL \egroup }{27}{subsection.1.6.6}%
+\contentsline {subsection}{\numberline {\if@rl \I {6.5.1}\else \textLR {1.5.6}\fi }\bgroup \beginL \latintext Discussion\endL \egroup }{28}{subsection.1.5.6}%
 \select@language {english}
-\contentsline {section}{\numberline {\if@rl \I {7.1}\else \textLR {1.7}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{27}{section.1.7}%
+\contentsline {section}{\numberline {\if@rl \I {6.1}\else \textLR {1.6}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{28}{section.1.6}%
 \select@language {english}
-\contentsline {chapter}{\numberline {2}\bgroup \beginL \latintext AI-Driven Optimization and Secure Autonomy in UAV Systems\endL \egroup }{28}{chapter.2}%
+\contentsline {chapter}{\numberline {2}\bgroup \beginL \latintext AI-Driven Optimization and Secure Autonomy in UAV Systems\endL \egroup }{29}{chapter.2}%
 \select@language {english}
-\contentsline {section}{\numberline {\if@rl \I {1.2}\else \textLR {2.1}\fi }\bgroup \beginL \latintext Introduction\endL \egroup }{28}{section.2.1}%
+\contentsline {section}{\numberline {\if@rl \I {1.2}\else \textLR {2.1}\fi }\bgroup \beginL \latintext Machine learning optimization for UAVs\endL \egroup }{29}{section.2.1}%
 \select@language {english}
-\contentsline {section}{\numberline {\if@rl \I {2.2}\else \textLR {2.2}\fi }\bgroup \beginL \latintext Machine learning optimization for UAVs\endL \egroup }{28}{section.2.2}%
+\contentsline {subsection}{\numberline {\if@rl \I {1.1.2}\else \textLR {2.1.1}\fi }\bgroup \beginL \latintext ML for UAV trajectory planning and mission scheduling\endL \egroup }{29}{subsection.2.1.1}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {1.2.2}\else \textLR {2.2.1}\fi }\bgroup \beginL \latintext ML for UAV trajectory planning and mission scheduling\endL \egroup }{28}{subsection.2.2.1}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Supervised Learning-based UAV Communications\endL \egroup }{30}{section*.41}%
 \select@language {english}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Supervised Learning-based UAV Communications\endL \egroup }{29}{section*.39}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Unsupervised Learning for Trajectory Planning and Communications\endL \egroup }{30}{section*.42}%
 \select@language {english}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Unsupervised Learning for Trajectory Planning and Communications\endL \egroup }{29}{section*.40}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Semi-supervised Learning for UAV Trajectory Opti mization\endL \egroup }{31}{section*.44}%
 \select@language {english}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Semi-supervised Learning for UAV Trajectory Opti mization\endL \egroup }{30}{section*.42}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Reinforcement Learning for Joint Trajectory Plan ning and Mission Scheduling\endL \egroup }{32}{section*.45}%
 \select@language {english}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Reinforcement Learning for Joint Trajectory Plan ning and Mission Scheduling\endL \egroup }{31}{section*.43}%
+\contentsline {paragraph}{\bgroup \beginL \latintext Deep Q-Network with Trajectory Discretization\endL \egroup }{32}{section*.46}%
 \select@language {english}
-\contentsline {paragraph}{\bgroup \beginL \latintext Deep Q-Network with Trajectory Discretization\endL \egroup }{31}{section*.44}%
+\contentsline {paragraph}{\bgroup \beginL \latintext Online Trajectory Planning With Deep Deterministic Policy Gradient\endL \egroup }{33}{section*.48}%
 \select@language {english}
-\contentsline {paragraph}{\bgroup \beginL \latintext Online Trajectory Planning With Deep Deterministic Policy Gradient\endL \egroup }{32}{section*.46}%
+\contentsline {paragraph}{\bgroup \beginL \latintext Multi-agent DRL for Multi-UAV Cooperation\endL \egroup }{34}{section*.50}%
 \select@language {english}
-\contentsline {paragraph}{\bgroup \beginL \latintext Multi-agent DRL for Multi-UAV Cooperation\endL \egroup }{33}{section*.48}%
+\contentsline {subsection}{\numberline {\if@rl \I {2.1.2}\else \textLR {2.1.2}\fi }\bgroup \beginL \latintext Machine Learning for UAV Perception and Feature Extraction\endL \egroup }{35}{subsection.2.1.2}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {2.2.2}\else \textLR {2.2.2}\fi }\bgroup \beginL \latintext Machine Learning for UAV Perception and Feature Extraction\endL \egroup }{34}{subsection.2.2.2}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Supervised Learning-based UAV Operations\endL \egroup }{36}{section*.52}%
 \select@language {english}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Supervised Learning-based UAV Operations\endL \egroup }{35}{section*.50}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Unsupervised Learning-based Approaches\endL \egroup }{38}{section*.54}%
 \select@language {english}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Unsupervised Learning-based Approaches\endL \egroup }{37}{section*.52}%
+\contentsline {subsection}{\numberline {\if@rl \I {3.1.2}\else \textLR {2.1.3}\fi }\bgroup \beginL \latintext Machine Learning for Feature Interpretation and Regeneration\endL \egroup }{40}{subsection.2.1.3}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {3.2.2}\else \textLR {2.2.3}\fi }\bgroup \beginL \latintext Machine Learning for Feature Interpretation and Regeneration\endL \egroup }{39}{subsection.2.2.3}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Feature interpretation by Linear Regression\endL \egroup }{40}{section*.56}%
 \select@language {english}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Feature interpretation by Linear Regression\endL \egroup }{39}{section*.54}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Classification by K-Means Clustering\endL \egroup }{41}{section*.57}%
 \select@language {english}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Classification by K-Means Clustering\endL \egroup }{40}{section*.55}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Environment Modeling Using Gaussian Mixture Models\endL \egroup }{42}{section*.59}%
 \select@language {english}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Environment Modeling Using Gaussian Mixture Models\endL \egroup }{41}{section*.57}%
+\contentsline {section}{\numberline {\if@rl \I {2.2}\else \textLR {2.2}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{43}{section.2.2}%
 \select@language {english}
-\contentsline {section}{\numberline {\if@rl \I {3.2}\else \textLR {2.3}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{42}{section.2.3}%
+\contentsline {chapter}{\numberline {3}\bgroup \beginL \latintext Traffic monitoring methods\endL \egroup }{44}{chapter.3}%
 \select@language {english}
-\contentsline {chapter}{\numberline {3}\bgroup \beginL \latintext Traffic monitoring methods\endL \egroup }{43}{chapter.3}%
+\contentsline {section}{\numberline {\if@rl \I {1.3}\else \textLR {3.1}\fi }\bgroup \beginL \latintext Method 1: Airborne Traffic Surveillance System (ATSS)\endL \egroup }{45}{section.3.1}%
 \select@language {english}
-\contentsline {section}{\numberline {\if@rl \I {1.3}\else \textLR {3.1}\fi }\bgroup \beginL \latintext Introduction\endL \egroup }{43}{section.3.1}%
+\contentsline {subsection}{\numberline {\if@rl \I {1.1.3}\else \textLR {3.1.1}\fi }\bgroup \beginL \latintext Key Features of ATSS\endL \egroup }{46}{subsection.3.1.1}%
 \select@language {english}
-\contentsline {section}{\numberline {\if@rl \I {2.3}\else \textLR {3.2}\fi }\bgroup \beginL \latintext Method 1: Airborne Traffic Surveillance System (ATSS)\endL \egroup }{44}{section.3.2}%
+\contentsline {subsection}{\numberline {\if@rl \I {2.1.3}\else \textLR {3.1.2}\fi }\bgroup \beginL \latintext Limitations of ATSS\endL \egroup }{46}{subsection.3.1.2}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {1.2.3}\else \textLR {3.2.1}\fi }\bgroup \beginL \latintext Key Features of ATSS\endL \egroup }{45}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {\if@rl \I {3.1.3}\else \textLR {3.1.3}\fi }\bgroup \beginL \latintext Future Potential\endL \egroup }{46}{subsection.3.1.3}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {2.2.3}\else \textLR {3.2.2}\fi }\bgroup \beginL \latintext Limitations of ATSS\endL \egroup }{45}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {\if@rl \I {4.1.3}\else \textLR {3.1.4}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{47}{subsection.3.1.4}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {3.2.3}\else \textLR {3.2.3}\fi }\bgroup \beginL \latintext Future Potential\endL \egroup }{45}{subsection.3.2.3}%
+\contentsline {section}{\numberline {\if@rl \I {2.3}\else \textLR {3.2}\fi }\bgroup \beginL \latintext Method 2: Video Relay Model Using Public Networks\endL \egroup }{47}{section.3.2}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {4.2.3}\else \textLR {3.2.4}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{46}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {\if@rl \I {1.2.3}\else \textLR {3.2.1}\fi }\bgroup \beginL \latintext Ground Control Station and Network Setup\endL \egroup }{47}{subsection.3.2.1}%
 \select@language {english}
-\contentsline {section}{\numberline {\if@rl \I {3.3}\else \textLR {3.3}\fi }\bgroup \beginL \latintext Method 2: Video Relay Model Using Public Networks\endL \egroup }{46}{section.3.3}%
+\contentsline {subsection}{\numberline {\if@rl \I {2.2.3}\else \textLR {3.2.2}\fi }\bgroup \beginL \latintext Operational Workflow\endL \egroup }{47}{subsection.3.2.2}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {1.3.3}\else \textLR {3.3.1}\fi }\bgroup \beginL \latintext Ground Control Station and Network Setup\endL \egroup }{46}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {\if@rl \I {3.2.3}\else \textLR {3.2.3}\fi }\bgroup \beginL \latintext Direct IP Address Sharing\endL \egroup }{48}{subsection.3.2.3}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {2.3.3}\else \textLR {3.3.2}\fi }\bgroup \beginL \latintext Operational Workflow\endL \egroup }{46}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {\if@rl \I {4.2.3}\else \textLR {3.2.4}\fi }\bgroup \beginL \latintext Server-Based Video Relay\endL \egroup }{49}{subsection.3.2.4}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {3.3.3}\else \textLR {3.3.3}\fi }\bgroup \beginL \latintext Direct IP Address Sharing\endL \egroup }{47}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {\if@rl \I {5.2.3}\else \textLR {3.2.5}\fi }\bgroup \beginL \latintext Limitations of the Method\endL \egroup }{49}{subsection.3.2.5}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {4.3.3}\else \textLR {3.3.4}\fi }\bgroup \beginL \latintext Server-Based Video Relay\endL \egroup }{48}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {\if@rl \I {6.2.3}\else \textLR {3.2.6}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{50}{subsection.3.2.6}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {5.3.3}\else \textLR {3.3.5}\fi }\bgroup \beginL \latintext Limitations of the Method\endL \egroup }{48}{subsection.3.3.5}%
+\contentsline {section}{\numberline {\if@rl \I {3.3}\else \textLR {3.3}\fi }\bgroup \beginL \latintext Method 3: UAV-Based Traffic Surveillance with 5G Integration\endL \egroup }{50}{section.3.3}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {6.3.3}\else \textLR {3.3.6}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{49}{subsection.3.3.6}%
+\contentsline {subsection}{\numberline {\if@rl \I {1.3.3}\else \textLR {3.3.1}\fi }\bgroup \beginL \latintext System Architecture\endL \egroup }{51}{subsection.3.3.1}%
 \select@language {english}
-\contentsline {section}{\numberline {\if@rl \I {4.3}\else \textLR {3.4}\fi }\bgroup \beginL \latintext Method 3: UAV-Based Traffic Surveillance with 5G Integration\endL \egroup }{49}{section.3.4}%
+\contentsline {subsection}{\numberline {\if@rl \I {2.3.3}\else \textLR {3.3.2}\fi }\bgroup \beginL \latintext Traffic Monitoring and Violation Detection\endL \egroup }{51}{subsection.3.3.2}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {1.4.3}\else \textLR {3.4.1}\fi }\bgroup \beginL \latintext System Architecture\endL \egroup }{50}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {\if@rl \I {3.3.3}\else \textLR {3.3.3}\fi }\bgroup \beginL \latintext Layer 1: UAV-Based Traffic Monitoring\endL \egroup }{52}{subsection.3.3.3}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {2.4.3}\else \textLR {3.4.2}\fi }\bgroup \beginL \latintext Traffic Monitoring and Violation Detection\endL \egroup }{50}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {\if@rl \I {4.3.3}\else \textLR {3.3.4}\fi }\bgroup \beginL \latintext Layer 2: Communication Network\endL \egroup }{52}{subsection.3.3.4}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {3.4.3}\else \textLR {3.4.3}\fi }\bgroup \beginL \latintext Layer 1: UAV-Based Traffic Monitoring\endL \egroup }{51}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {\if@rl \I {5.3.3}\else \textLR {3.3.5}\fi }\bgroup \beginL \latintext Layer 3: Highway Traffic Management\endL \egroup }{52}{subsection.3.3.5}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {4.4.3}\else \textLR {3.4.4}\fi }\bgroup \beginL \latintext Layer 2: Communication Network\endL \egroup }{51}{subsection.3.4.4}%
+\contentsline {subsection}{\numberline {\if@rl \I {6.3.3}\else \textLR {3.3.6}\fi }\bgroup \beginL \latintext Algorithm for Traffic Monitoring\endL \egroup }{52}{subsection.3.3.6}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {5.4.3}\else \textLR {3.4.5}\fi }\bgroup \beginL \latintext Layer 3: Highway Traffic Management\endL \egroup }{51}{subsection.3.4.5}%
+\contentsline {subsection}{\numberline {\if@rl \I {7.3.3}\else \textLR {3.3.7}\fi }\bgroup \beginL \latintext Limitations of the Proposed System\endL \egroup }{53}{subsection.3.3.7}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {6.4.3}\else \textLR {3.4.6}\fi }\bgroup \beginL \latintext Algorithm for Traffic Monitoring\endL \egroup }{51}{subsection.3.4.6}%
+\contentsline {subsection}{\numberline {\if@rl \I {8.3.3}\else \textLR {3.3.8}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{54}{subsection.3.3.8}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {7.4.3}\else \textLR {3.4.7}\fi }\bgroup \beginL \latintext Limitations of the Proposed System\endL \egroup }{52}{subsection.3.4.7}%
+\contentsline {section}{\numberline {\if@rl \I {4.3}\else \textLR {3.4}\fi }\bgroup \beginL \latintext Method 4: Cooperative Traffic Monitoring Using Multiple UAVs\endL \egroup }{54}{section.3.4}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {8.4.3}\else \textLR {3.4.8}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{53}{subsection.3.4.8}%
+\contentsline {subsection}{\numberline {\if@rl \I {1.4.3}\else \textLR {3.4.1}\fi }\bgroup \beginL \latintext Key Components of the System\endL \egroup }{54}{subsection.3.4.1}%
 \select@language {english}
-\contentsline {section}{\numberline {\if@rl \I {5.3}\else \textLR {3.5}\fi }\bgroup \beginL \latintext Method 4: Cooperative Traffic Monitoring Using Multiple UAVs\endL \egroup }{53}{section.3.5}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Collecting Information About Vehicles\endL \egroup }{54}{section*.65}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {1.5.3}\else \textLR {3.5.1}\fi }\bgroup \beginL \latintext Key Components of the System\endL \egroup }{53}{subsection.3.5.1}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Deploying UAVs Over Coverage Areas\endL \egroup }{55}{section*.66}%
 \select@language {english}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Collecting Information About Vehicles\endL \egroup }{53}{section*.62}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Designing UAV Trajectories\endL \egroup }{57}{section*.68}%
 \select@language {english}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Deploying UAVs Over Coverage Areas\endL \egroup }{54}{section*.63}%
+\contentsline {subsection}{\numberline {\if@rl \I {2.4.3}\else \textLR {3.4.2}\fi }\bgroup \beginL \latintext Simulation and Results\endL \egroup }{58}{subsection.3.4.2}%
 \select@language {english}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Designing UAV Trajectories\endL \egroup }{56}{section*.65}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Key Findings\endL \egroup }{58}{section*.70}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {2.5.3}\else \textLR {3.5.2}\fi }\bgroup \beginL \latintext Simulation and Results\endL \egroup }{57}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {\if@rl \I {3.4.3}\else \textLR {3.4.3}\fi }\bgroup \beginL \latintext Limitations of the Method\endL \egroup }{59}{subsection.3.4.3}%
 \select@language {english}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Key Findings\endL \egroup }{57}{section*.67}%
+\contentsline {subsection}{\numberline {\if@rl \I {4.4.3}\else \textLR {3.4.4}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{60}{subsection.3.4.4}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {3.5.3}\else \textLR {3.5.3}\fi }\bgroup \beginL \latintext Limitations of the Method\endL \egroup }{58}{subsection.3.5.3}%
+\contentsline {section}{\numberline {\if@rl \I {5.3}\else \textLR {3.5}\fi }\bgroup \beginL \latintext Method 5: UAV-Assisted Emergency Vehicle Routing\endL \egroup }{60}{section.3.5}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {4.5.3}\else \textLR {3.5.4}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{59}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {\if@rl \I {1.5.3}\else \textLR {3.5.1}\fi }\bgroup \beginL \latintext System Overview\endL \egroup }{61}{subsection.3.5.1}%
 \select@language {english}
-\contentsline {section}{\numberline {\if@rl \I {6.3}\else \textLR {3.6}\fi }\bgroup \beginL \latintext Method 5: UAV-Assisted Emergency Vehicle Routing\endL \egroup }{59}{section.3.6}%
+\contentsline {subsection}{\numberline {\if@rl \I {2.5.3}\else \textLR {3.5.2}\fi }\bgroup \beginL \latintext System Composition\endL \egroup }{61}{subsection.3.5.2}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {1.6.3}\else \textLR {3.6.1}\fi }\bgroup \beginL \latintext System Overview\endL \egroup }{60}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {\if@rl \I {3.5.3}\else \textLR {3.5.3}\fi }\bgroup \beginL \latintext UAV States and Communication\endL \egroup }{61}{subsection.3.5.3}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {2.6.3}\else \textLR {3.6.2}\fi }\bgroup \beginL \latintext System Composition\endL \egroup }{60}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {\if@rl \I {4.5.3}\else \textLR {3.5.4}\fi }\bgroup \beginL \latintext Operational Constraints\endL \egroup }{62}{subsection.3.5.4}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {3.6.3}\else \textLR {3.6.3}\fi }\bgroup \beginL \latintext UAV States and Communication\endL \egroup }{60}{subsection.3.6.3}%
+\contentsline {subsection}{\numberline {\if@rl \I {5.5.3}\else \textLR {3.5.5}\fi }\bgroup \beginL \latintext Weight Calculation\endL \egroup }{62}{subsection.3.5.5}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {4.6.3}\else \textLR {3.6.4}\fi }\bgroup \beginL \latintext Operational Constraints\endL \egroup }{61}{subsection.3.6.4}%
+\contentsline {subsection}{\numberline {\if@rl \I {6.5.3}\else \textLR {3.5.6}\fi }\bgroup \beginL \latintext Organization and Data Routing\endL \egroup }{63}{subsection.3.5.6}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {5.6.3}\else \textLR {3.6.5}\fi }\bgroup \beginL \latintext Weight Calculation\endL \egroup }{61}{subsection.3.6.5}%
+\contentsline {subsection}{\numberline {\if@rl \I {7.5.3}\else \textLR {3.5.7}\fi }\bgroup \beginL \latintext Connected Dominating Set (CDS) Formation\endL \egroup }{64}{subsection.3.5.7}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {6.6.3}\else \textLR {3.6.6}\fi }\bgroup \beginL \latintext Organization and Data Routing\endL \egroup }{62}{subsection.3.6.6}%
+\contentsline {subsection}{\numberline {\if@rl \I {8.5.3}\else \textLR {3.5.8}\fi }\bgroup \beginL \latintext Routing\endL \egroup }{65}{subsection.3.5.8}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {7.6.3}\else \textLR {3.6.7}\fi }\bgroup \beginL \latintext Connected Dominating Set (CDS) Formation\endL \egroup }{63}{subsection.3.6.7}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Packet Format\endL \egroup }{65}{section*.76}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {8.6.3}\else \textLR {3.6.8}\fi }\bgroup \beginL \latintext Routing\endL \egroup }{64}{subsection.3.6.8}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Routing Process\endL \egroup }{66}{section*.77}%
 \select@language {english}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Packet Format\endL \egroup }{64}{section*.73}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Optimal Path Calculation to the Incident\endL \egroup }{66}{section*.79}%
 \select@language {english}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Routing Process\endL \egroup }{65}{section*.74}%
+\contentsline {subsection}{\numberline {\if@rl \I {9.5.3}\else \textLR {3.5.9}\fi }\bgroup \beginL \latintext Performance Evaluation\endL \egroup }{67}{subsection.3.5.9}%
 \select@language {english}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Optimal Path Calculation to the Incident\endL \egroup }{65}{section*.76}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Routing Performance\endL \egroup }{67}{section*.81}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {9.6.3}\else \textLR {3.6.9}\fi }\bgroup \beginL \latintext Performance Evaluation\endL \egroup }{66}{subsection.3.6.9}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Energy Consumption Performance\endL \egroup }{67}{section*.82}%
 \select@language {english}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Routing Performance\endL \egroup }{66}{section*.78}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Application Performance\endL \egroup }{68}{section*.83}%
 \select@language {english}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Energy Consumption Performance\endL \egroup }{66}{section*.79}%
+\contentsline {subsection}{\numberline {\if@rl \I {10.5.3}\else \textLR {3.5.10}\fi }\bgroup \beginL \latintext Limitations of the Method\endL \egroup }{68}{subsection.3.5.10}%
 \select@language {english}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Application Performance\endL \egroup }{67}{section*.80}%
+\contentsline {subsection}{\numberline {\if@rl \I {11.5.3}\else \textLR {3.5.11}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{69}{subsection.3.5.11}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {10.6.3}\else \textLR {3.6.10}\fi }\bgroup \beginL \latintext Limitations of the Method\endL \egroup }{67}{subsection.3.6.10}%
+\contentsline {section}{\numberline {\if@rl \I {6.3}\else \textLR {3.6}\fi }\bgroup \beginL \latintext Method 6: Collaborative Hotspot Selection (CHS) for UAV-Based Traffic Surveillance\endL \egroup }{69}{section.3.6}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {11.6.3}\else \textLR {3.6.11}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{68}{subsection.3.6.11}%
+\contentsline {subsection}{\numberline {\if@rl \I {1.6.3}\else \textLR {3.6.1}\fi }\bgroup \beginL \latintext System Overview\endL \egroup }{69}{subsection.3.6.1}%
 \select@language {english}
-\contentsline {section}{\numberline {\if@rl \I {7.3}\else \textLR {3.7}\fi }\bgroup \beginL \latintext Method 6: Collaborative Hotspot Selection (CHS) for UAV-Based Traffic Surveillance\endL \egroup }{68}{section.3.7}%
+\contentsline {subsection}{\numberline {\if@rl \I {2.6.3}\else \textLR {3.6.2}\fi }\bgroup \beginL \latintext Probabilistic Model for UAV Trajectory Control\endL \egroup }{70}{subsection.3.6.2}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {1.7.3}\else \textLR {3.7.1}\fi }\bgroup \beginL \latintext System Overview\endL \egroup }{68}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {\if@rl \I {3.6.3}\else \textLR {3.6.3}\fi }\bgroup \beginL \latintext Hop Number Allocation and Instant Reporting\endL \egroup }{71}{subsection.3.6.3}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {2.7.3}\else \textLR {3.7.2}\fi }\bgroup \beginL \latintext Probabilistic Model for UAV Trajectory Control\endL \egroup }{69}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {\if@rl \I {4.6.3}\else \textLR {3.6.4}\fi }\bgroup \beginL \latintext Performance Evaluation\endL \egroup }{71}{subsection.3.6.4}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {3.7.3}\else \textLR {3.7.3}\fi }\bgroup \beginL \latintext Hop Number Allocation and Instant Reporting\endL \egroup }{70}{subsection.3.7.3}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Key Metrics\endL \egroup }{72}{section*.86}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {4.7.3}\else \textLR {3.7.4}\fi }\bgroup \beginL \latintext Performance Evaluation\endL \egroup }{70}{subsection.3.7.4}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Simulation Results\endL \egroup }{72}{section*.87}%
 \select@language {english}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Key Metrics\endL \egroup }{71}{section*.83}%
+\contentsline {subsection}{\numberline {\if@rl \I {5.6.3}\else \textLR {3.6.5}\fi }\bgroup \beginL \latintext Limitations and Challenges\endL \egroup }{72}{subsection.3.6.5}%
 \select@language {english}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Simulation Results\endL \egroup }{71}{section*.84}%
+\contentsline {section}{\numberline {\if@rl \I {7.3}\else \textLR {3.7}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{73}{section.3.7}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {5.7.3}\else \textLR {3.7.5}\fi }\bgroup \beginL \latintext Limitations and Challenges\endL \egroup }{71}{subsection.3.7.5}%
 \select@language {english}
-\contentsline {section}{\numberline {\if@rl \I {8.3}\else \textLR {3.8}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{72}{section.3.8}%
+\contentsline {part}{II\hspace {1em}\bgroup \beginL \latintext Contribution\endL \egroup }{75}{part.2}%
 \select@language {english}
+\contentsline {chapter}{\numberline {4}\bgroup \beginL \latintext Conception\endL \egroup }{76}{chapter.4}%
 \select@language {english}
-\contentsline {chapter}{References}{74}{chapter*.87}%
+\contentsline {section}{\numberline {\if@rl \I {1.4}\else \textLR {4.1}\fi }\bgroup \beginL \latintext Overview of the Proposed Solution\endL \egroup }{76}{section.4.1}%
+\select@language {english}
+\contentsline {chapter}{\numberline {5}\bgroup \beginL \latintext Implementation\endL \egroup }{77}{chapter.5}%
+\select@language {english}
+\contentsline {chapter}{\numberline {6}\bgroup \beginL \latintext Tests and Evaluation\endL \egroup }{78}{chapter.6}%
+\select@language {english}
+\contentsline {chapter}{References}{79}{chapter*.93}%
