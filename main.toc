@@ -3,8 +3,8 @@
 \contentsline {chapter}{Abstract}{ii}{section*.2}%
 \contentsline {chapter}{Contents}{v}{section*.2}%
 \select@language {english}
-\contentsline {chapter}{List of abbreviations}{vii}{chapter*.3}%
-\contentsline {chapter}{List of figures}{vi}{section*.2}%
+\contentsline {chapter}{List of abbreviations}{viii}{chapter*.3}%
+\contentsline {chapter}{List of figures}{vii}{section*.2}%
 \select@language {english}
 \contentsline {chapter}{General introduction}{1}{chapter*.4}%
 \select@language {english}
@@ -241,10 +241,24 @@
 \select@language {english}
 \contentsline {chapter}{\numberline {4}\bgroup \beginL \latintext Conception\endL \egroup }{76}{chapter.4}%
 \select@language {english}
-\contentsline {section}{\numberline {\if@rl \I {1.4}\else \textLR {4.1}\fi }\bgroup \beginL \latintext Overview of the Proposed Solution\endL \egroup }{76}{section.4.1}%
+\contentsline {section}{\numberline {\if@rl \I {1.4}\else \textLR {4.1}\fi }\bgroup \beginL \latintext Problematic and Objectives\endL \egroup }{77}{section.4.1}%
 \select@language {english}
-\contentsline {chapter}{\numberline {5}\bgroup \beginL \latintext Implementation\endL \egroup }{77}{chapter.5}%
+\contentsline {section}{\numberline {\if@rl \I {2.4}\else \textLR {4.2}\fi }\bgroup \beginL \latintext Overview of the Proposed Solution\endL \egroup }{78}{section.4.2}%
 \select@language {english}
-\contentsline {chapter}{\numberline {6}\bgroup \beginL \latintext Tests and Evaluation\endL \egroup }{78}{chapter.6}%
+\contentsline {subsection}{\numberline {\if@rl \I {1.2.4}\else \textLR {4.2.1}\fi }\bgroup \beginL \latintext System Architecture\endL \egroup }{78}{subsection.4.2.1}%
 \select@language {english}
-\contentsline {chapter}{References}{79}{chapter*.93}%
+\contentsline {subsection}{\numberline {\if@rl \I {2.2.4}\else \textLR {4.2.2}\fi }\bgroup \beginL \latintext Communication Framework\endL \egroup }{80}{subsection.4.2.2}%
+\select@language {english}
+\contentsline {subsection}{\numberline {\if@rl \I {3.2.4}\else \textLR {4.2.3}\fi }\bgroup \beginL \latintext Decision-Making and Control Logic\endL \egroup }{81}{subsection.4.2.3}%
+\select@language {english}
+\contentsline {subsection}{\numberline {\if@rl \I {4.2.4}\else \textLR {4.2.4}\fi }\bgroup \beginL \latintext Onboard Computer Vision Module for Vehicle Detection\endL \egroup }{82}{subsection.4.2.4}%
+\select@language {english}
+\contentsline {subsection}{\numberline {\if@rl \I {5.2.4}\else \textLR {4.2.5}\fi }\bgroup \beginL \latintext Predictive Surveillance Module\endL \egroup }{83}{subsection.4.2.5}%
+\select@language {english}
+\contentsline {section}{\numberline {\if@rl \I {3.4}\else \textLR {4.3}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{84}{section.4.3}%
+\select@language {english}
+\contentsline {chapter}{\numberline {5}\bgroup \beginL \latintext Implementation\endL \egroup }{86}{chapter.5}%
+\select@language {english}
+\contentsline {chapter}{\numberline {6}\bgroup \beginL \latintext Tests and Evaluation\endL \egroup }{87}{chapter.6}%
+\select@language {english}
+\contentsline {chapter}{References}{88}{chapter*.96}%
