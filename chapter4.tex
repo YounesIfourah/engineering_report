@@ -216,7 +216,7 @@ The decision-making and control logic of the CHS system governs how UAVs respond
     Before any mission is declared, each UAV follows a predefined initial patrol route designed to provide baseline coverage of the monitored highway network. These patrol paths are assigned to maximize spatial distribution and reduce the likelihood of coverage gaps. During this phase, UAVs operate autonomously, collecting environmental and traffic data while conserving energy through efficient path planning. This proactive patrolling ensures that the system maintains situational awareness even in the absence of active violations, and it positions UAVs strategically so that they can respond more rapidly when an infraction is detected.
 
     \item \textbf{Dynamic Zone Assignment:}  
-    When a Reporting Node (RN) detects a speeding event, it sends a mission declaration to the network, specifying the location of the violation — which directly corresponds to the sensor’s geographic position. At this moment, UAVs begin exchanging state information, including their current position, remaining battery level, and ongoing assignments. The distributed decision-making algorithm then evaluates which UAV is best suited to address the new mission based on proximity to the hotspot, energy reserves, and current workload. This ensures a quick and efficient allocation of resources, minimizing response time to high-risk areas.
+    When a Reporting Node (RN) detects a speeding event, it sends a mission declaration to the network, specifying the location of the violation which directly corresponds to the sensor’s geographic position. At this moment, UAVs begin exchanging state information, including their current position, remaining battery level, and ongoing assignments. The distributed decision-making algorithm then evaluates which UAV is best suited to address the new mission based on proximity to the hotspot, energy reserves, and current workload. This ensures a quick and efficient allocation of resources, minimizing response time to high-risk areas.
 
     \item \textbf{Energy-Aware Routing:}  
     To maintain operational longevity, UAVs continually share battery status updates with nearby drones. The selection algorithm incorporates this information to ensure that only UAVs with sufficient energy are assigned to missions, avoiding situations where a drone might fail to complete its task due to battery depletion. This approach balances workload across the fleet, preventing overuse of individual UAVs and extending the system’s sustained surveillance capabilities.
@@ -296,89 +296,102 @@ This decision-making framework enables the CHS system to operate collaboratively
 
 
 
-\subsection{Onboard Computer Vision Module for Vehicle Detection}
-% Purpose: Real-time detection/classification of vehicles from UAV camera feed
-% Role: Validate hotspot detection or confirm speeding vehicles
-% Design pipeline: image acquisition -> detection -> analysis -> decision
-% Mention chosen algorithms/technologies (YOLO, OpenCV, etc.) without implementation details
 
-The CHS system integrates a computer vision module on each UAV to detect and track vehicles in real-time. This module enhances the surveillance capabilities by providing automated identification of speeding vehicles and supporting dynamic hotspot monitoring.
+
+
+
+\subsection{Onboard Computer Vision Module for Vehicle Detection}
+
+The CHS system integrates a sophisticated computer vision module on each UAV to detect and track vehicles in real time, calculate their speed, identify speeding violations, and signal the presence of such violations to the rest of the network. This module significantly enhances surveillance capabilities by enabling autonomous detection of speeding vehicles and supporting dynamic hotspot monitoring without relying solely on ground sensors.
 
 \begin{itemize}
-    \item \textbf{Camera Integration:} 
-    \begin{itemize}
-        \item Each UAV is equipped with a high-resolution camera capable of capturing video streams in real-time.
-        \item The camera is stabilized and gimbal-mounted to maintain clear visuals even during UAV movement.
-    \end{itemize}
+    \item \textbf{Camera Integration:}  
+    Each UAV is equipped with a high-resolution camera capable of capturing continuous video streams in real time. The camera is mounted on a gimbal-stabilized platform to ensure sharp, clear imagery even during UAV movement, turbulence, or sudden maneuvers. This stabilization is essential for accurate detection, as motion blur or misalignment could compromise vehicle tracking and speed estimation. The optical system is also optimized for varying lighting conditions, enabling the UAV to operate effectively during both daytime and nighttime missions.
 
-    \item \textbf{Vehicle Detection Algorithm:} 
-    \begin{itemize}
-        \item The module employs machine learning-based object detection models (e.g., YOLO or SSD) to identify vehicles in the captured frames.
-        \item Detection includes localization (bounding boxes) and classification of vehicles (cars, trucks, motorcycles) to assist in traffic analysis.
-    \end{itemize}
+    \item \textbf{Vehicle Detection Algorithm:}  
+    The onboard processing unit runs advanced machine learning-based object detection algorithms, such as YOLO (You Only Look Once), to identify vehicles within the video frames. This detection process involves both localization drawing bounding boxes around detected objects and classification, differentiating between various types of vehicles such as cars, trucks, and motorcycles. This classification capability not only aids in identifying specific offenders but also provides valuable traffic composition data for further analysis and prediction.
 
-    \item \textbf{Speed Estimation:} 
-    \begin{itemize}
-        \item By tracking the position of vehicles across consecutive frames and combining it with UAV telemetry (altitude and camera angle), the module estimates the speed of each detected vehicle.
-        \item Vehicles exceeding predefined speed thresholds are flagged as violations.
-    \end{itemize}
+    \item \textbf{Speed Estimation:}  
+    Once vehicles are detected, the system tracks their positions across consecutive frames using multi-object tracking techniques. By combining this positional data with UAV telemetry, including altitude, GPS location, and camera angle, the system accurately calculates the speed of each vehicle. Vehicles that exceed a predefined speed threshold are immediately flagged as violations. This automated approach eliminates the need for manual intervention and ensures that even brief violations are captured.
 
-    \item \textbf{Data Transmission:} 
-    \begin{itemize}
-        \item Detected violations, including vehicle type, position, speed, and associated images, are transmitted to the Mobile Base Stations (MBS) through the communication framework.
-        \item This ensures immediate reporting and enables timely enforcement actions.
-    \end{itemize}
+    \item \textbf{Data Transmission:}  
+    When a violation is confirmed, the UAV compiles a detailed report that includes the vehicle type, geographic position, calculated speed, and supporting visual evidence such as images or short video clips. This data is transmitted in near real time to the Mobile Base Stations (MBS) through the CHS communication framework. The rapid delivery of this information enables ground enforcement teams to act quickly, whether by intercepting the vehicle or logging the infraction for later penalties.
 
-    \item \textbf{Integration with Decision-Making:} 
-    \begin{itemize}
-        \item Detection results feed into the UAV’s decision-making module, influencing real-time adjustments in flight paths and targeting of new hotspots.
-        \item The system can prioritize zones with the highest number of violations detected by the vision module, improving the overall effectiveness of highway surveillance.
-    \end{itemize}
+    \item \textbf{Integration with Decision-Making:}  
+    The outputs of the computer vision module are directly integrated into the UAV’s decision-making logic. Detection results influence the prioritization of surveillance zones, allowing UAVs to dynamically adjust their flight paths toward areas with higher observed violation rates. This real-time feedback loop ensures that UAVs focus on locations where their presence will have the greatest impact, thereby increasing the overall effectiveness and efficiency of the CHS system in mitigating speeding incidents.
 \end{itemize}
 
-The onboard computer vision module provides autonomous, real-time monitoring capabilities, significantly enhancing the CHS system’s efficiency in detecting speeding vehicles and dynamically allocating UAV resources.
+The onboard computer vision module transforms each UAV into an intelligent, autonomous monitoring unit capable of independently detecting, verifying, and reporting traffic violations. By combining high-quality imaging, advanced object recognition, precise speed estimation, and seamless integration with the decision-making framework, this module plays a pivotal role in achieving continuous and targeted highway surveillance.
+
+
 
 \subsection{Predictive Surveillance Module}
-% Data collection/preprocessing from RN or public datasets
-% ML model for early prediction of infractions
-% How predictions integrate into CHS for proactive drone deployment
 
-
-The Predictive Surveillance Module enhances the CHS system by forecasting potential traffic infractions and enabling proactive UAV deployment. This module uses historical and real-time data to predict hotspots, improving coverage and reducing response time.
+In the current CHS architecture, there exists a limitation: when a vehicle triggers a mission by being detected speeding by a ground sensor, it may already be too late to capture visual evidence, as the sensor itself lacks a camera and the offending vehicle might have already left the monitored zone. The Predictive Surveillance Module addresses this challenge by enabling proactive UAV positioning before the arrival of a potential violator. By leveraging historical data, real-time measurements, and machine learning techniques, the module forecasts where infractions are most likely to occur, thereby reducing UAV response time and increasing capture rates.
 
 \begin{itemize}
-    \item \textbf{Data Sources:} 
-    \begin{itemize}
-        \item Historical traffic data from ground sensors (Reporting Nodes) and past UAV missions.
-        \item Real-time speed measurements and incident reports transmitted by UAVs and Mobile Base Stations (MBS).
-    \end{itemize}
+    \item \textbf{Data Sources:}  
+    The predictive module aggregates information from multiple sources to build a comprehensive traffic behavior profile. Historical traffic data, collected from Reporting Nodes (RNs) and past UAV mission records, form the foundation for long-term pattern analysis. Public datasets, such as those available from \textit{data.gouv.fr} in France, are also integrated to enrich the historical database with broader traffic trends. In addition, real-time inputs such as current speed measurements from RNs, infraction reports from UAVs, and enforcement data from Mobile Base Stations (MBS) ensure that the predictive model remains aligned with current conditions.
 
-    \item \textbf{Machine Learning Algorithms:} 
-    \begin{itemize}
-        \item Supervised learning models (e.g., Random Forest, Gradient Boosting, or Neural Networks) are trained to identify patterns leading to speeding or risky driving behavior.
-        \item The models output probabilities for potential infractions across different road segments.
-    \end{itemize}
+    \item \textbf{Machine Learning Algorithms:}  
+    The module employs advanced supervised learning models, including Random Forests, Gradient Boosting Machines, and Neural Networks, to identify patterns associated with speeding or hazardous driving. These models are trained on labeled datasets containing both historical and real-time features, such as traffic density, time of day, and weather conditions. The algorithms process this data to produce probabilistic forecasts of speeding incidents for different road segments, enabling the CHS system to move beyond purely reactive surveillance.
 
-    \item \textbf{Hotspot Prediction:} 
-    \begin{itemize}
-        \item Predicted high-risk zones are continuously updated as new data arrives.
-        \item UAVs receive prioritized task assignments based on these predictions, allowing for early monitoring of likely violation points.
-    \end{itemize}
+    \item \textbf{Hotspot Prediction:}  
+    The predictive engine continuously updates a dynamic map of high-risk zones, recalculating probabilities as fresh sensor and UAV data arrives. When a particular segment shows an elevated likelihood of violation, it is flagged as a predicted hotspot. This allows UAVs to be dispatched to these locations ahead of time, increasing the probability of capturing a violation as it occurs rather than after the fact. This capability is especially useful in rural or sparsely monitored areas where ground sensors are widely spaced.
 
-    \item \textbf{Integration with UAV Decision-Making:} 
-    \begin{itemize}
-        \item Predicted hotspots feed directly into the decision-making and control logic, guiding UAV routing and scheduling.
-        \item This proactive approach complements reactive monitoring from the onboard vision module, ensuring comprehensive surveillance.
-    \end{itemize}
+    \item \textbf{Integration with UAV Decision-Making:}  
+    Predictions generated by the module are directly fed into the UAV decision-making and control logic. This ensures that the system’s routing and scheduling algorithms can proactively allocate UAVs to areas of concern before a violation is even detected. In doing so, the predictive component complements the reactive monitoring provided by the onboard vision system, creating a hybrid strategy that combines foresight with immediate situational awareness.
 
-    \item \textbf{Performance Feedback:} 
-    \begin{itemize}
-        \item The system compares predicted infractions with actual detections, refining the prediction models over time.
-        \item Continuous learning ensures improved accuracy and efficiency in UAV deployment.
-    \end{itemize}
+    \item \textbf{Performance Feedback:}  
+    To maintain and improve accuracy over time, the module incorporates a continuous learning loop. After each mission, predicted infractions are compared against actual detections to evaluate model performance. Discrepancies between prediction and reality are analyzed and used to retrain the models, enabling gradual refinement. This adaptive learning approach ensures that the predictive module becomes increasingly reliable, ultimately leading to smarter UAV deployment and more efficient highway surveillance.
 \end{itemize}
 
-By predicting potential infractions, the Predictive Surveillance Module enables the CHS system to anticipate traffic violations, optimize UAV deployment, and maximize overall surveillance effectiveness.
+By anticipating potential violations rather than merely responding to them, the Predictive Surveillance Module transforms the CHS system into a proactive enforcement tool. This not only improves the capture rate of speeding vehicles but also allows for more strategic use of UAV resources, maximizing coverage and minimizing wasted flight time.
+
+
+
+
+% \subsection{Predictive Surveillance Module}
+% % Data collection/preprocessing from RN or public datasets
+% % ML model for early prediction of infractions
+% % How predictions integrate into CHS for proactive drone deployment
+
+
+% The Predictive Surveillance Module enhances the CHS system by forecasting potential traffic infractions and enabling proactive UAV deployment. This module uses historical and real-time data to predict hotspots, improving coverage and reducing response time.
+
+% \begin{itemize}
+%     \item \textbf{Data Sources:} 
+%     \begin{itemize}
+%         \item Historical traffic data from ground sensors (Reporting Nodes) and past UAV missions.
+%         \item Real-time speed measurements and incident reports transmitted by UAVs and Mobile Base Stations (MBS).
+%     \end{itemize}
+
+%     \item \textbf{Machine Learning Algorithms:} 
+%     \begin{itemize}
+%         \item Supervised learning models (e.g., Random Forest, Gradient Boosting, or Neural Networks) are trained to identify patterns leading to speeding or risky driving behavior.
+%         \item The models output probabilities for potential infractions across different road segments.
+%     \end{itemize}
+
+%     \item \textbf{Hotspot Prediction:} 
+%     \begin{itemize}
+%         \item Predicted high-risk zones are continuously updated as new data arrives.
+%         \item UAVs receive prioritized task assignments based on these predictions, allowing for early monitoring of likely violation points.
+%     \end{itemize}
+
+%     \item \textbf{Integration with UAV Decision-Making:} 
+%     \begin{itemize}
+%         \item Predicted hotspots feed directly into the decision-making and control logic, guiding UAV routing and scheduling.
+%         \item This proactive approach complements reactive monitoring from the onboard vision module, ensuring comprehensive surveillance.
+%     \end{itemize}
+
+%     \item \textbf{Performance Feedback:} 
+%     \begin{itemize}
+%         \item The system compares predicted infractions with actual detections, refining the prediction models over time.
+%         \item Continuous learning ensures improved accuracy and efficiency in UAV deployment.
+%     \end{itemize}
+% \end{itemize}
+
+% By predicting potential infractions, the Predictive Surveillance Module enables the CHS system to anticipate traffic violations, optimize UAV deployment, and maximize overall surveillance effectiveness.
 
 
 

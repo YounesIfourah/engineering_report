@@ -253,12 +253,34 @@
 \select@language {english}
 \contentsline {subsection}{\numberline {\if@rl \I {4.2.4}\else \textLR {4.2.4}\fi }\bgroup \beginL \latintext Onboard Computer Vision Module for Vehicle Detection\endL \egroup }{82}{subsection.4.2.4}%
 \select@language {english}
-\contentsline {subsection}{\numberline {\if@rl \I {5.2.4}\else \textLR {4.2.5}\fi }\bgroup \beginL \latintext Predictive Surveillance Module\endL \egroup }{83}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {\if@rl \I {5.2.4}\else \textLR {4.2.5}\fi }\bgroup \beginL \latintext Predictive Surveillance Module\endL \egroup }{84}{subsection.4.2.5}%
 \select@language {english}
-\contentsline {section}{\numberline {\if@rl \I {3.4}\else \textLR {4.3}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{84}{section.4.3}%
+\contentsline {section}{\numberline {\if@rl \I {3.4}\else \textLR {4.3}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{85}{section.4.3}%
 \select@language {english}
 \contentsline {chapter}{\numberline {5}\bgroup \beginL \latintext Implementation\endL \egroup }{86}{chapter.5}%
 \select@language {english}
-\contentsline {chapter}{\numberline {6}\bgroup \beginL \latintext Tests and Evaluation\endL \egroup }{87}{chapter.6}%
+\contentsline {section}{\numberline {\if@rl \I {1.5}\else \textLR {5.1}\fi }\bgroup \beginL \latintext Choice of Physical Material\endL \egroup }{86}{section.5.1}%
 \select@language {english}
-\contentsline {chapter}{References}{88}{chapter*.96}%
+\contentsline {section}{\numberline {\if@rl \I {2.5}\else \textLR {5.2}\fi }\bgroup \beginL \latintext Choice of Tools and Development Environment\endL \egroup }{91}{section.5.2}%
+\select@language {english}
+\contentsline {section}{\numberline {\if@rl \I {3.5}\else \textLR {5.3}\fi }\bgroup \beginL \latintext Communication Protocol Implementation\endL \egroup }{93}{section.5.3}%
+\select@language {english}
+\contentsline {section}{\numberline {\if@rl \I {4.5}\else \textLR {5.4}\fi }\bgroup \beginL \latintext Distributed Decision Algorithm\endL \egroup }{93}{section.5.4}%
+\select@language {english}
+\contentsline {paragraph}{\bgroup \beginL \latintext Distance.\endL \egroup }{94}{section*.115}%
+\select@language {english}
+\contentsline {paragraph}{\bgroup \beginL \latintext Battery consumption.\endL \egroup }{95}{section*.116}%
+\select@language {english}
+\contentsline {paragraph}{\bgroup \beginL \latintext Phase A: Real missions (if any).\endL \egroup }{96}{section*.121}%
+\select@language {english}
+\contentsline {paragraph}{\bgroup \beginL \latintext Phase B: Potential hotspots (only if no real missions remain).\endL \egroup }{96}{section*.122}%
+\select@language {english}
+\contentsline {section}{\numberline {\if@rl \I {5.5}\else \textLR {5.5}\fi }\bgroup \beginL \latintext On-board Computer Vision Modules\endL \egroup }{99}{section.5.5}%
+\select@language {english}
+\contentsline {section}{\numberline {\if@rl \I {6.5}\else \textLR {5.6}\fi }\bgroup \beginL \latintext Prediction of Speed Violations\endL \egroup }{99}{section.5.6}%
+\select@language {english}
+\contentsline {section}{\numberline {\if@rl \I {7.5}\else \textLR {5.7}\fi }\bgroup \beginL \latintext Challenges During the Implementation\endL \egroup }{99}{section.5.7}%
+\select@language {english}
+\contentsline {chapter}{\numberline {6}\bgroup \beginL \latintext Tests and Evaluation\endL \egroup }{100}{chapter.6}%
+\select@language {english}
+\contentsline {chapter}{References}{101}{chapter*.131}%
