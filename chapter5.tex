@@ -12,7 +12,7 @@ We then describe the integration of the machine learning prediction module, trai
 
 The final section focuses on system optimization, including strategies for reducing energy consumption, improving communication reliability, and achieving a balance between real-time responsiveness, processing requirements, and operational scalability.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Problematic and Objectives %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Choice of Physical Material %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Choice of Physical Material}
 
@@ -139,6 +139,9 @@ Its main specifications are:
     \label{fig:proposed_architecture} % Reference label
 \end{figure}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Choice of Tools and Development Environment %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Choice of Tools and Development Environment}
 
 The implementation of the Collaborative Highway Surveillance (CHS) system required a 
@@ -221,11 +224,286 @@ For project management and documentation:
 \end{itemize}
 
 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Communication Protocol Implementation %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Communication Protocol Implementation}
 
+\subsection{Setting up the Mesh Network}
+
+Typically, drones utilize the MAVLink protocol to exchange data with a ground station through a point-to-point radio link. In this setup, a drone communicates directly with a control station, often via a short-range radio connection. While this approach is efficient for single-drone communications with a ground station, it has limitations when multiple drones need to interact or share data in real-time.
+
+To overcome these limitations and enable multi-drone communication, we opted for a mesh network. Unlike point-to-point links, where each drone connects individually to the ground station, a mesh network allows every drone to function as both a communication node and a data relay. This enables drones to forward information to other drones or the ground station via intermediate nodes, improving resilience and coverage. If a drone loses direct connectivity with the ground station, it can still transmit data through other drones.
+
+We implemented this mesh network using Raspberry Pi modules, employing the BATMAN-adv protocol for dynamic routing within the ad-hoc network. These modules interconnect drones, speed sensors, and ground stations, forming a flexible and robust infrastructure (Figure~\ref{fig:test_platform}). Each sensor acts as a node in the mesh network and facilitates MAVLink message exchange between the mesh and infrastructure networks. The architecture isolates the drone network and introduces an additional security layer using native Linux policies.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7\textwidth]{platform_test.png}
+\caption{Test platform with BATMAN-adv interconnection between drones and ground stations.}
+\label{fig:test_platform}
+\end{figure}
+
+\subsubsection{Installing Raspberry Pi on Drones}
+
+Raspberry Pi modules are widely used to add advanced features to drones. We utilize them for telemetry, onboard camera, and speed sensor functions. Additionally, they serve as software bridges with MAVLink-router, connecting Pixhawk flight controllers to other network nodes.
+
+For hardware installation, we used:
+\begin{itemize}
+    \item Raspberry Pi Zero 2 W;
+    \item Dupont cables for connections;
+    \item UART-to-USB converter for serial communication testing;
+    \item 3S LiPo battery;
+    \item Mission Planner ground station;
+    \item Soldering equipment.
+\end{itemize}
+
+The Raspberry Pi is powered separately from the drone's main battery, connected directly to the PDB on the F450 frame (Figure~\ref{fig:pi_pixhawk}). Communication with the flight controller uses the UART serial interface (e.g., TELEM1, TELEM2), connecting telemetry modules like ESP32 or Raspberry Pi.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7\textwidth]{pi_pixhawk.png}
+\caption{Raspberry Pi connected to Pixhawk via UART.}
+\label{fig:pi_pixhawk}
+\end{figure}
+
+Connections:
+\begin{itemize}
+    \item 5V Pi to 5V PDB;
+    \item GND Pi to GND PDB;
+    \item TX Pi to RX Pixhawk;
+    \item RX Pi to TX Pixhawk.
+\end{itemize}
+
+\subsubsection{Overview of BATMAN-adv}
+
+BATMAN-adv operates like traditional IP link-state protocols but in a decentralized manner. Each node only knows the next hop for data forwarding. Routing tables are built using ELP (Echo Location Protocol) to discover direct neighbors and OGMs (Originator Messages) to propagate routing information.
+
+\begin{itemize}
+    \item ELP identifies neighboring nodes and evaluates link quality.
+    \item OGMs broadcast each node’s presence and routes, decrementing TTL as messages propagate.
+\end{itemize}
+
+Data is routed hop-by-hop, dynamically updating tables if nodes become unavailable, ensuring adaptation to network topology changes.
+
+\subsubsection{Mesh Network Configuration}
+
+Raspberry Pi modules on drones are configured as follows:
+\begin{enumerate}
+    \item Install OS on microSD using Raspberry Pi Imager (preferably headless).
+    \item Enable UART port and disable Bluetooth via \texttt{/boot/firmware/config.txt} and \texttt{systemctl}.
+    \item Configure the infrastructure network (\texttt{wlan1}) using \texttt{wpa\_supplicant}.
+    \item Install BATMAN-adv: \texttt{sudo apt install batctl wireless-tools iptables ifupdown -y}.
+    \item Set up interfaces in \texttt{/etc/network/interfaces}, assigning static IP to \texttt{bat0}.
+    \item Create startup scripts for \texttt{bat0} configuration to ensure persistence after reboot.
+    \item Verify network using ARP tables, neighbors, client/server mode, routing tables, and OGM capture.
+\end{enumerate}
+
+\subsubsection{Software Bridge Integration}
+
+MAVLink-router is installed on the Raspberry Pi to route MAVLink messages from the drone's UART to the mesh network:
+\begin{itemize}
+    \item Disable console on serial port via \texttt{raspi-config}.
+    \item Set up Python virtual environment and install \texttt{mavlink-router, pymavlink, pyserial}.
+    \item Remove conflicting packages like \texttt{ModemManager}.
+    \item Compile and install MAVLink-router from source, allowing message distribution between Pixhawk and multiple clients via TCP/UDP.
+\end{itemize}
 
 
 
+
+\subsection{Collecting Local UAV Data}
+
+In order to monitor and record the state of the UAV, a dedicated local data collection mechanism has been implemented using Python and MAVProxy. This subsystem is responsible for interacting with the drone’s autopilot through the MAVLink protocol and extracting key status information in real time.
+
+\subsubsection{MAVProxy Integration}
+
+The core of this process relies on \texttt{mavproxy.py}, which serves as a middleware to communicate with the flight controller. The script launches MAVProxy using a serial connection (\texttt{/dev/serial0}) with a baud rate of 57600. Once the connection is established, the script sends a \texttt{status} command to request the UAV’s telemetry and status information. This approach ensures that all essential onboard parameters are captured without interfering with normal flight operations.
+
+\subsubsection{Output Retrieval and Timing}
+
+After sending the \texttt{status} command, the script reads the MAVProxy output line by line over a five-second interval. This mechanism captures a snapshot of the UAV’s current state. A timeout is implemented to prevent indefinite blocking in case the UAV does not respond or the connection is unstable. The retrieved raw output is stored for further parsing and processing.
+
+\subsubsection{Parsing MAVLink Messages}
+
+Raw MAVLink messages are structured but often include multiple fields with varying data types. The script implements a custom parser that:
+
+\begin{itemize}
+    \item Uses regular expressions to extract key-value pairs from the MAVLink messages.
+    \item Converts numeric values to appropriate Python types (\texttt{int} or \texttt{float}).
+    \item Handles arrays and special string formats.
+    \item Annotates each message with a timestamp for temporal context.
+\end{itemize}
+
+This parsing step transforms unstructured MAVLink text output into a well-organized dictionary format, where each message type (e.g., \texttt{HEARTBEAT}, \texttt{SYS\_STATUS}) can contain multiple entries representing the UAV’s current state.
+
+\subsubsection{Data Aggregation}
+
+Once parsed, messages are grouped by type into a single \texttt{messages} dictionary. This allows for efficient indexing and retrieval of specific data points. For example, battery status, GPS position, or system health can be accessed independently without scanning the raw output.
+
+\subsubsection{Verification and Output}
+
+Finally, the processed data is displayed in JSON format, providing a concise view of the UAV’s current state. This visualization serves both as a debugging tool and a verification step to ensure the integrity of collected information. The use of JSON also facilitates downstream tasks such as logging, analysis, or transmission over a communication protocol.
+
+
+
+
+\subsection{UAV-to-UAV Status Exchange via MAVLink}
+
+To enable cooperative operation and real-time situational awareness among multiple UAVs, a communication module for exchanging UAV status information was implemented. This module uses the MAVLink protocol to transmit structured telemetry data from one UAV to another, ensuring that each UAV can be aware of the state of its peers. The implementation is divided into a sender and a receiver component.
+
+\subsubsection{Sender Implementation}
+
+The sender component retrieves the local UAV status from onboard sensors and systems using the \texttt{get\_uav\_status\_data()} function. This status data typically includes:
+
+\begin{itemize}
+    \item UAV identification number
+    \item Geographic position (latitude, longitude)
+    \item Altitude
+    \item Battery level
+    \item Speed
+    \item System status
+    \item Timestamp of the measurement
+\end{itemize}
+
+To send this information reliably over MAVLink, the data is first serialized into a JSON string. Because MAVLink \texttt{STATUSTEXT} messages have a limited payload size, the JSON string is split into smaller chunks of 35 characters each. The sending protocol then follows these steps:
+
+\begin{enumerate}
+    \item \textbf{Start marker:} A \texttt{STATUS\_START} message is sent, including metadata about the total number of chunks and the total message length.
+    \item \textbf{Data chunks:} Each chunk is transmitted in sequence using \texttt{STATUS\_PART} messages with explicit sequence numbers.
+    \item \textbf{End marker:} A \texttt{STATUS\_END} message signals the completion of the transmission.
+\end{enumerate}
+
+This structured transmission ensures that the receiving UAV can correctly reconstruct the full JSON payload even if messages arrive out of order or experience delays.
+
+\subsubsection{Receiver Implementation}
+
+The receiver continuously listens for incoming \texttt{STATUSTEXT} messages. Upon receiving a \texttt{STATUS\_START} message, it initializes a temporary buffer and expects a specific number of chunks. As \texttt{STATUS\_PART} messages arrive, the receiver stores them in a dictionary indexed by sequence number. Once the \texttt{STATUS\_END} marker is received and all chunks are present, the JSON string is reconstructed, verified for length consistency, and parsed back into structured data. The timestamp field is converted back into a Python \texttt{datetime} object for temporal tracking.
+
+Finally, the received status can be displayed for verification or stored in a database using existing functions such as \texttt{save\_uav\_status\_db()}. This allows real-time monitoring of peer UAVs and provides a foundation for cooperative decision-making or swarm coordination.
+
+\subsubsection{Reliability and Timing Considerations}
+
+A small delay of 0.1 seconds is introduced between sending consecutive chunks to avoid message collisions or overload on the communication link. The receiver includes a timeout mechanism (default 5 seconds) to prevent indefinite blocking if some chunks are lost. Errors in decoding, incomplete transmissions, or malformed messages are logged, ensuring robustness in real-world operations.
+
+
+
+\subsection{Simulated Speed Record Generation}
+
+In order to test and validate the UAV monitoring system without relying solely on real-world flight data, a simulation module for generating speed records was implemented. This module produces synthetic UAV speed measurements over time, including both normal and threshold-violating values, enabling controlled testing of data processing, alerting, and database storage mechanisms.
+
+\subsubsection{Configuration and Thresholds}
+
+The simulation reads a configuration file (\texttt{config.json}) containing a \texttt{violation\_threshold} parameter, which defines the upper limit for normal UAV speed. Any simulated speed exceeding this threshold is considered a violation, which can be used to trigger alerts or log incidents. The simulation also uses hardcoded generation parameters for the speed range and the interval between measurements:
+
+\begin{itemize}
+    \item Minimum speed: 60 km/h
+    \item Maximum speed: 210 km/h
+    \item Violation probability: 30\% of the measurements
+    \item Measurement interval: 2 to 5 seconds
+\end{itemize}
+
+\subsubsection{Speed Generation Logic}
+
+The \texttt{generate\_speed\_record()} function produces a tuple consisting of:
+
+\begin{enumerate}
+    \item \textbf{Speed:} A floating-point value representing the UAV's instantaneous speed. 30\% of the time, the generated speed intentionally exceeds the configured threshold to simulate violations.
+    \item \textbf{Interval:} A random delay in seconds until the next measurement is generated.
+\end{enumerate}
+
+The algorithm ensures realistic variability in speed while maintaining a controllable ratio of threshold violations, allowing robust testing of alerting mechanisms and data storage.
+
+\subsubsection{Simulation Execution}
+
+The main simulation loop continuously generates speed records and prints them to the console. Each measurement is accompanied by a visual indicator:
+
+\begin{itemize}
+    \item \texttt{✅} if the speed is within the allowed threshold
+    \item \texttt{🚨} if the speed exceeds the threshold
+\end{itemize}
+
+The loop sleeps for the generated interval between measurements, simulating real-time recording of UAV speed. The simulation can be terminated safely via keyboard interruption.
+
+\subsubsection{Applications}
+
+This simulated speed data provides:
+
+\begin{itemize}
+    \item Realistic testing of UAV status monitoring and logging
+    \item Validation of threshold-based alerting systems
+    \item Controlled evaluation of data handling, storage, and analysis pipelines
+\end{itemize}
+
+By generating both compliant and violating speed records, the system can be stress-tested for edge cases without requiring continuous real UAV flights, improving development efficiency and safety.
+
+
+
+\subsection{Manual Throttle Control and Motor Management}
+
+This module provides low-level control over the UAV motors by interfacing directly with the flight controller via the MAVLink protocol. It allows the UAV to be armed, disarmed, and to have its throttle manually adjusted in real time. This functionality is essential for both testing and emergency scenarios where autonomous control may not be desired.
+
+\subsubsection{Connection Setup}
+
+The UAV is connected through a serial interface (or USB), specifying the appropriate port and baud rate. Once the connection is established, the system waits for a heartbeat message from the flight controller to ensure communication is stable:
+
+\begin{verbatim}
+master = mavutil.mavlink_connection(serial_port, baud=baud_rate)
+master.wait_heartbeat()
+\end{verbatim}
+
+\subsubsection{Motor Arming and Throttle Activation}
+
+The \texttt{arm\_and\_start\_motors()} function performs three main actions:
+
+\begin{enumerate}
+    \item \textbf{Arming the UAV:} Sends a \texttt{MAV\_CMD\_COMPONENT\_ARM\_DISARM} command to prepare the motors for operation.
+    \item \textbf{Setting Manual Mode:} Switches the flight controller to manual mode, enabling direct throttle and motor control.
+    \item \textbf{Activating Motors:} Sends a manual control command to set the throttle value, initiating motor rotation.
+\end{enumerate}
+
+Example of sending throttle command:
+\begin{verbatim}
+master.mav.manual_control_send(master.target_system, 0, 0, 0, 0, 1000)
+\end{verbatim}
+
+\subsubsection{Motor Disarming and Throttle Deactivation}
+
+The \texttt{disarm\_and\_stop\_motors()} function safely stops the motors and disarms the UAV:
+
+\begin{enumerate}
+    \item \textbf{Disarming the UAV:} Sends a disarm command to the flight controller.
+    \item \textbf{Stopping the Motors:} Sets the throttle value to zero, ensuring the propellers are fully stopped.
+\end{enumerate}
+
+\subsubsection{Interactive Control Loop}
+
+A user-driven loop allows manual starting and stopping of the UAV motors by entering commands in the console:
+
+\begin{itemize}
+    \item \texttt{start} – Arms the UAV and begins motor rotation.
+    \item \texttt{stop} – Stops the motors and disarms the UAV.
+\end{itemize}
+
+The loop continues until interrupted by the user (e.g., pressing \texttt{Ctrl+C}), which triggers a safe motor shutdown.
+
+\subsubsection{Applications}
+
+This module is particularly useful for:
+
+\begin{itemize}
+    \item Testing UAV hardware and motor response.
+    \item Performing manual hover or throttle control when autonomous control is disabled.
+    \item Emergency motor shutdown in case of abnormal behavior during flight.
+\end{itemize}
+
+It complements the UAV status monitoring and speed simulation modules by providing direct physical control over the vehicle.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Distributed Decision Algorithm %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Distributed Decision Algorithm}
 
@@ -404,33 +682,6 @@ This represents proactive coverage.
 \end{algorithm}
 
 
-% \subsection*{Beam Search Procedure (High-Level Pseudocode)}
-% \begin{algorithm}[H]
-% \SetAlgoLined
-% \DontPrintSemicolon
-% \KwIn{UAV set \(\mathcal{U}\), mission set \(\mathcal{M}\), WSN set \(\mathcal{W}\), prob. map \(p(\cdot)\)}
-% \KwOut{Assignment map \(\mathcal{A}\)}
-% Normalize UAV statuses and mission priorities\;
-% Construct initial state \(s_0\) with empty \(\mathcal{A}\)\;
-% Initialize beam \(B \leftarrow \{s_0\}\); best state \(s^\star \leftarrow s_0\)\;
-% \While{\(B \neq \emptyset\)}{
-%   Extract up to \(\texttt{BEAM\_WIDTH}\) states from \(B\) into \(L\)\;
-%   Update \(s^\star \leftarrow \arg\max_{s\in L} \texttt{score}(s)\)\;
-%   \If{ (\(\text{depth} \ge \texttt{MAX\_DEPTH\_TOTAL}\)) or (no missions and no WSNs) }{break}
-%   \(C \leftarrow \emptyset\)\;
-%   \ForEach{\(s \in L\)}{
-%     Generate child states by assigning (i) real missions if any else (ii) potential WSNs\;
-%     Discard infeasible children (battery safety)\;
-%     Add children to \(C\)\;
-%   }
-%   \If{\(C=\emptyset\)}{break}
-%   Keep top \(\texttt{BEAM\_WIDTH}\) elements of \(C\) by \texttt{score} as the next beam \(B\)\;
-% }
-% \Return assignments of \(s^\star\)
-% \caption{Beam search for UAV--mission assignment}
-% \end{algorithm}
-
-
 \subsection*{Correctness-by-Construction Properties}
 \begin{itemize}
   \item \textbf{One UAV per mission}: an assignment consumes the chosen UAV from
@@ -495,10 +746,69 @@ This artifact serves as an auditable explanation of the chosen assignments.
         to dynamic traffic conditions and intermittent communications.
 \end{itemize}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% On-board Computer Vision Modules %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{On-board Computer Vision Modules}
+
+The on-board computer vision modules are a critical component of the UAV system, enabling real-time detection, tracking, and analysis of vehicles and their license plates. These modules leverage video processing and machine learning techniques to extract meaningful information from the camera feed, which can then be used for monitoring, navigation, and decision-making tasks.
+
+The overall computer vision pipeline implemented in this work consists of three main stages, as illustrated in Figure~\ref{fig:cv_pipeline}:
+
+\begin{enumerate}
+    \item \textbf{Vehicle and Plate Tracking:} The input video is analyzed to detect vehicles and recognize their license plates. The tracking results are saved into a CSV file for further processing.
+    \item \textbf{Data Interpolation:} Missing tracking data, often caused by occlusions or detection failures, is interpolated to ensure a continuous and smooth trajectory for each vehicle.
+    \item \textbf{Video Processing and Overlay:} The interpolated results are overlaid onto the original video to generate a final annotated video, providing a visual summary of the detected vehicles and license plates.
+\end{enumerate}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{cv_pipeline_diagram.png} % Replace with your diagram
+    \caption{Overview of the on-board computer vision pipeline.}
+    \label{fig:cv_pipeline}
+\end{figure}
+
+The Python implementation of this pipeline can be summarized as follows:
+
+\begin{verbatim}
+from scripts import (
+    vehicle_and_plate_tracking,
+    interpolate_vehicle_tracking_csv,
+    process_video
+)
+
+def main():
+    input_video_path = './sample.mp4'
+    raw_output_csv = './test.csv'
+    interpolated_output_csv = './test_interpolated.csv'
+    output_video_path = './out.mp4'
+    
+    # Step 1: Track vehicles and plates
+    vehicle_and_plate_tracking(video_path=input_video_path,
+                               output_csv_path=raw_output_csv)
+
+    # Step 2: Interpolate missing vehicle tracking data
+    interpolate_vehicle_tracking_csv(raw_output_csv, interpolated_output_csv)
+
+    # Step 3: Overlay license plates on video
+    process_video(video_path=input_video_path,
+                  results_csv_path=interpolated_output_csv,
+                  output_video_path=output_video_path)
+
+if __name__ == "__main__":
+    main()
+\end{verbatim}
+
+This pipeline ensures accurate vehicle tracking, robust handling of missing data, and clear visual presentation of results, forming the foundation for the on-board vision capabilities of the UAV system.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Prediction of Speed Violations %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Prediction of Speed Violations}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Challenges During the Implementation %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Challenges During the Implementation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Conclusion %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section*{Conclusion}

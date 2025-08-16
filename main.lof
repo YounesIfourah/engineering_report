@@ -40,4 +40,7 @@
 \contentsline {figure}{\numberline {\if@rl \I {2.5}\else \textLR {5.2}\fi }{\ignorespaces Proposed CHS system architecture.}}{89}{figure.caption.99}%
 \contentsline {figure}{\numberline {\if@rl \I {3.5}\else \textLR {5.3}\fi }{\ignorespaces Proposed CHS system architecture.}}{90}{figure.caption.101}%
 \contentsline {figure}{\numberline {\if@rl \I {4.5}\else \textLR {5.4}\fi }{\ignorespaces Proposed CHS system architecture.}}{91}{figure.caption.102}%
+\contentsline {figure}{\numberline {\if@rl \I {5.5}\else \textLR {5.5}\fi }{\ignorespaces Test platform with BATMAN-adv interconnection between drones and ground stations.}}{94}{figure.caption.111}%
+\contentsline {figure}{\numberline {\if@rl \I {6.5}\else \textLR {5.6}\fi }{\ignorespaces Raspberry Pi connected to Pixhawk via UART.}}{95}{figure.caption.113}%
+\contentsline {figure}{\numberline {\if@rl \I {7.5}\else \textLR {5.7}\fi }{\ignorespaces Overview of the on-board computer vision pipeline.}}{109}{figure.caption.152}%
 \addvspace {10\p@ }

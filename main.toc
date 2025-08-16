@@ -265,22 +265,74 @@
 \select@language {english}
 \contentsline {section}{\numberline {\if@rl \I {3.5}\else \textLR {5.3}\fi }\bgroup \beginL \latintext Communication Protocol Implementation\endL \egroup }{93}{section.5.3}%
 \select@language {english}
-\contentsline {section}{\numberline {\if@rl \I {4.5}\else \textLR {5.4}\fi }\bgroup \beginL \latintext Distributed Decision Algorithm\endL \egroup }{93}{section.5.4}%
+\contentsline {subsection}{\numberline {\if@rl \I {1.3.5}\else \textLR {5.3.1}\fi }\bgroup \beginL \latintext Setting up the Mesh Network\endL \egroup }{93}{subsection.5.3.1}%
 \select@language {english}
-\contentsline {paragraph}{\bgroup \beginL \latintext Distance.\endL \egroup }{94}{section*.115}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Installing Raspberry Pi on Drones\endL \egroup }{94}{section*.112}%
 \select@language {english}
-\contentsline {paragraph}{\bgroup \beginL \latintext Battery consumption.\endL \egroup }{95}{section*.116}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Overview of BATMAN-adv\endL \egroup }{95}{section*.114}%
 \select@language {english}
-\contentsline {paragraph}{\bgroup \beginL \latintext Phase A: Real missions (if any).\endL \egroup }{96}{section*.121}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Mesh Network Configuration\endL \egroup }{96}{section*.115}%
 \select@language {english}
-\contentsline {paragraph}{\bgroup \beginL \latintext Phase B: Potential hotspots (only if no real missions remain).\endL \egroup }{96}{section*.122}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Software Bridge Integration\endL \egroup }{96}{section*.116}%
 \select@language {english}
-\contentsline {section}{\numberline {\if@rl \I {5.5}\else \textLR {5.5}\fi }\bgroup \beginL \latintext On-board Computer Vision Modules\endL \egroup }{99}{section.5.5}%
+\contentsline {subsection}{\numberline {\if@rl \I {2.3.5}\else \textLR {5.3.2}\fi }\bgroup \beginL \latintext Collecting Local UAV Data\endL \egroup }{96}{subsection.5.3.2}%
 \select@language {english}
-\contentsline {section}{\numberline {\if@rl \I {6.5}\else \textLR {5.6}\fi }\bgroup \beginL \latintext Prediction of Speed Violations\endL \egroup }{99}{section.5.6}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext MAVProxy Integration\endL \egroup }{97}{section*.117}%
 \select@language {english}
-\contentsline {section}{\numberline {\if@rl \I {7.5}\else \textLR {5.7}\fi }\bgroup \beginL \latintext Challenges During the Implementation\endL \egroup }{99}{section.5.7}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Output Retrieval and Timing\endL \egroup }{97}{section*.118}%
 \select@language {english}
-\contentsline {chapter}{\numberline {6}\bgroup \beginL \latintext Tests and Evaluation\endL \egroup }{100}{chapter.6}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Parsing MAVLink Messages\endL \egroup }{97}{section*.119}%
 \select@language {english}
-\contentsline {chapter}{References}{101}{chapter*.131}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Data Aggregation\endL \egroup }{97}{section*.120}%
+\select@language {english}
+\contentsline {subsubsection}{\bgroup \beginL \latintext Verification and Output\endL \egroup }{98}{section*.121}%
+\select@language {english}
+\contentsline {subsection}{\numberline {\if@rl \I {3.3.5}\else \textLR {5.3.3}\fi }\bgroup \beginL \latintext UAV-to-UAV Status Exchange via MAVLink\endL \egroup }{98}{subsection.5.3.3}%
+\select@language {english}
+\contentsline {subsubsection}{\bgroup \beginL \latintext Sender Implementation\endL \egroup }{98}{section*.122}%
+\select@language {english}
+\contentsline {subsubsection}{\bgroup \beginL \latintext Receiver Implementation\endL \egroup }{99}{section*.123}%
+\select@language {english}
+\contentsline {subsubsection}{\bgroup \beginL \latintext Reliability and Timing Considerations\endL \egroup }{99}{section*.124}%
+\select@language {english}
+\contentsline {subsection}{\numberline {\if@rl \I {4.3.5}\else \textLR {5.3.4}\fi }\bgroup \beginL \latintext Simulated Speed Record Generation\endL \egroup }{99}{subsection.5.3.4}%
+\select@language {english}
+\contentsline {subsubsection}{\bgroup \beginL \latintext Configuration and Thresholds\endL \egroup }{99}{section*.125}%
+\select@language {english}
+\contentsline {subsubsection}{\bgroup \beginL \latintext Speed Generation Logic\endL \egroup }{100}{section*.126}%
+\select@language {english}
+\contentsline {subsubsection}{\bgroup \beginL \latintext Simulation Execution\endL \egroup }{100}{section*.127}%
+\select@language {english}
+\contentsline {subsubsection}{\bgroup \beginL \latintext Applications\endL \egroup }{100}{section*.128}%
+\select@language {english}
+\contentsline {subsection}{\numberline {\if@rl \I {5.3.5}\else \textLR {5.3.5}\fi }\bgroup \beginL \latintext Manual Throttle Control and Motor Management\endL \egroup }{101}{subsection.5.3.5}%
+\select@language {english}
+\contentsline {subsubsection}{\bgroup \beginL \latintext Connection Setup\endL \egroup }{101}{section*.129}%
+\select@language {english}
+\contentsline {subsubsection}{\bgroup \beginL \latintext Motor Arming and Throttle Activation\endL \egroup }{101}{section*.130}%
+\select@language {english}
+\contentsline {subsubsection}{\bgroup \beginL \latintext Motor Disarming and Throttle Deactivation\endL \egroup }{101}{section*.131}%
+\select@language {english}
+\contentsline {subsubsection}{\bgroup \beginL \latintext Interactive Control Loop\endL \egroup }{102}{section*.132}%
+\select@language {english}
+\contentsline {subsubsection}{\bgroup \beginL \latintext Applications\endL \egroup }{102}{section*.133}%
+\select@language {english}
+\contentsline {section}{\numberline {\if@rl \I {4.5}\else \textLR {5.4}\fi }\bgroup \beginL \latintext Distributed Decision Algorithm\endL \egroup }{102}{section.5.4}%
+\select@language {english}
+\contentsline {paragraph}{\bgroup \beginL \latintext Distance.\endL \egroup }{104}{section*.138}%
+\select@language {english}
+\contentsline {paragraph}{\bgroup \beginL \latintext Battery consumption.\endL \egroup }{104}{section*.139}%
+\select@language {english}
+\contentsline {paragraph}{\bgroup \beginL \latintext Phase A: Real missions (if any).\endL \egroup }{105}{section*.144}%
+\select@language {english}
+\contentsline {paragraph}{\bgroup \beginL \latintext Phase B: Potential hotspots (only if no real missions remain).\endL \egroup }{105}{section*.145}%
+\select@language {english}
+\contentsline {section}{\numberline {\if@rl \I {5.5}\else \textLR {5.5}\fi }\bgroup \beginL \latintext On-board Computer Vision Modules\endL \egroup }{108}{section.5.5}%
+\select@language {english}
+\contentsline {section}{\numberline {\if@rl \I {6.5}\else \textLR {5.6}\fi }\bgroup \beginL \latintext Prediction of Speed Violations\endL \egroup }{110}{section.5.6}%
+\select@language {english}
+\contentsline {section}{\numberline {\if@rl \I {7.5}\else \textLR {5.7}\fi }\bgroup \beginL \latintext Challenges During the Implementation\endL \egroup }{110}{section.5.7}%
+\select@language {english}
+\contentsline {chapter}{\numberline {6}\bgroup \beginL \latintext Tests and Evaluation\endL \egroup }{111}{chapter.6}%
+\select@language {english}
+\contentsline {chapter}{References}{112}{chapter*.155}%
